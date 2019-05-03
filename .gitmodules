@@ -1,0 +1,3 @@
+[submodule ".\\themes\\yilia"]
+	path = .\\themes\\yilia
+	url = git@github.com:star2000/yilia
