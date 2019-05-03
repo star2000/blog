@@ -11,7 +11,7 @@
     "hexo-generator-archive": "*",
     "hexo-generator-category": "*",
     "hexo-generator-index": "*",
-    "hexo-generator-json-content": "*",
+    "hexo-generator-search": "*",
     "hexo-generator-sitemap": "*",
     "hexo-generator-tag": "*",
     "hexo-renderer-ejs": "*",

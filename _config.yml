@@ -80,23 +80,3 @@ theme: yelee
 deploy:
   type: git
   repo: git@github.com:star2000/star2000.github.io
-
-
-jsonContent:
-  meta: false
-  pages: false
-  posts:
-    title: true
-    date: true
-    path: true
-    text: false
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    categories: false
-    tags: true
