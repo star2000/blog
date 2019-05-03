@@ -5,3 +5,4 @@ db.json
 node_modules/
 公开/
 .deploy*/
+package-lock.json
