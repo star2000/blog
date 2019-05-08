@@ -79,7 +79,7 @@ theme: yelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:star2000/star2000.github.io
+  repo: git@git.dev.tencent.com:xing2000/xing2000.coding.me
 
 neat_enable: true
 
