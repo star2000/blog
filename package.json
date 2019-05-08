@@ -9,6 +9,7 @@
     "hexo": "*",
     "hexo-deployer-git": "*",
     "hexo-generator-archive": "*",
+    "hexo-generator-baidu-sitemap": "*",
     "hexo-generator-category": "*",
     "hexo-generator-index": "*",
     "hexo-generator-search": "*",
