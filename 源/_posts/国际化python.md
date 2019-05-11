@@ -4,7 +4,7 @@ tags: 随笔
 date: 2019-05-11 23:08:52
 ---
 
-# i18n-python
+# [i18n-python](https://github.com/star2000/i18n-python)
 为python自身添加多语言支持  
 <!--more-->
 最初的想法是用vscode写代码时，不用看那些英文提示。  
