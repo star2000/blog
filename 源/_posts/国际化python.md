@@ -14,7 +14,7 @@ vscode的提示也会变成中文。
 # 安装
 - Windows:
 ```sh
-$OutputEncoding=[Text.Encoding]::Default;(wget 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/install.py').Content | py
+$OutputEncoding=[Text.Encoding]::UTF8;(wget 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/install.py').Content | py
 ```
 - Linux:
 ```sh
@@ -41,7 +41,7 @@ pydoc3 print
 # 卸载
 - Windows:
 ```sh
-$OutputEncoding=[Text.Encoding]::Default;(wget 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/uninstall.py').Content | py
+$OutputEncoding=[Text.Encoding]::UTF8;(wget 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/uninstall.py').Content | py
 ```
 - Linux:
 ```sh
