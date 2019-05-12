@@ -18,7 +18,7 @@ $OutputEncoding=[Text.Encoding]::UTF8;(wget 'https://raw.githubusercontent.com/s
 ```
 - Linux:
 ```sh
-wget -O- 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/install.py' | python3
+wget -qO- 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/install.py' | python3
 ```
 
 # 测试
@@ -45,7 +45,7 @@ $OutputEncoding=[Text.Encoding]::UTF8;(wget 'https://raw.githubusercontent.com/s
 ```
 - Linux:
 ```sh
-wget -O- 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/uninstall.py' | python3
+wget -qO- 'https://raw.githubusercontent.com/star2000/i18n-python/master/bin/uninstall.py' | python3
 ```
 
 # 贡献
