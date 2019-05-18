@@ -1,0 +1,9 @@
+language: node_js
+
+cache: npm
+
+install: npm i
+
+script: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
+
+deploy: ./node_modules/.bin/hexo g -d

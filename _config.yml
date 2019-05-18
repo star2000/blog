@@ -79,7 +79,9 @@ theme: yelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@git.dev.tencent.com:xing2000/xing2000.coding.me
+  name: 星
+  email: i@star2000.work
+  repo: https://TOKEN_USER:TOKEN_PWD@git.dev.tencent.com/xing2000/xing2000.coding.me
 
 neat_enable: true
 
