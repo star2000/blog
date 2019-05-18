@@ -1,14 +1,8 @@
 language: node_js
-
 node_js: node
-
 git:
   depth: 1
-
 cache: npm
-
 install: npm i
-
 before_script: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
-
 script: ./node_modules/.bin/hexo g -d
