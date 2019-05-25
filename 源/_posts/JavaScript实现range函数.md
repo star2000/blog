@@ -8,12 +8,13 @@ date: 2018-06-08 21:47:01
 <!--more-->
 ```js
 /**
- * 生成迭代器
- * @param Number start    开始值
- * @param Number end      结束值
- * @param Number step     步长
- * @yield Generator       迭代器
- */
+ * 生成迭代器
+ *
+ * @param {Number} start 开始值
+ * @param {Number} end 结束值
+ * @param {Number} [step=1] 步长
+ * @yield {Generator} 迭代器
+ */
 function* range(start, end, step = 1) {
     if (undefined === end) {
         [end, start] = [start, 0]
