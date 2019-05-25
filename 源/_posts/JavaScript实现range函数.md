@@ -13,7 +13,7 @@ date: 2018-06-08 21:47:01
  * @param {Number} start 开始值
  * @param {Number} end 结束值
  * @param {Number} [step=1] 步长
- * @yield {Generator} 迭代器
+ * @returns {Generator} 迭代器
  */
 function* range(start, end, step = 1) {
     if (undefined === end) {
