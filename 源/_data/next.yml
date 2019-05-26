@@ -1,0 +1,56 @@
+favicon:
+  small: /favicon.png
+  medium: /favicon.png
+  apple_touch_icon: /favicon.png
+  safari_pinned_tab: /favicon.png
+
+rss: atom.xml
+
+footer:
+  since: 2019
+
+github_banner:
+  enable: true
+  permalink: https://github.com/star2000
+  title: 在GitHub上关注我
+
+seo: true
+
+google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
+bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
+baidu_site_verification: Nzdi1ehD60
+
+baidu_push: true
+
+social:
+  GitHub: https://github.com/star2000 || github
+  E-Mail: mailto:i@star2000.work || envelope
+
+avatar:
+  url: /favicon.png
+  rounded: true
+
+codeblock:
+  copy_button:
+    enable: true
+    show_result: true
+
+post_edit:
+  enable: true
+  url: https://github.com/star2000/blog/edit/master/源/_posts
+
+mobile_layout_economy: true
+safari_rainbow: true
+custom_scrollbar: true
+
+font:
+  enable: true
+  codes:
+    external: false
+    family: consolas, 楷体
+
+bookmark:
+  enable: true
+
+reading_progress:
+  enable: true

@@ -11,6 +11,7 @@
     "hexo-generator-archive": "*",
     "hexo-generator-baidu-sitemap": "*",
     "hexo-generator-category": "*",
+    "hexo-generator-feed": "*",
     "hexo-generator-index": "*",
     "hexo-generator-search": "*",
     "hexo-generator-sitemap": "*",
