@@ -42,7 +42,7 @@ codeblock:
 
 post_edit:
   enable: true
-  url: https://github.com/star2000/blog/edit/master/源
+  url: https://github.com/star2000/blog/edit/master/源/
 
 mobile_layout_economy: true
 safari_rainbow: true
