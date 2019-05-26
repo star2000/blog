@@ -23,7 +23,7 @@ source_dir: 源
 public_dir: 公开
 tag_dir: 标签
 archive_dir: 归档
-category_dir: 类别
+category_dir: 分类
 code_dir: 下载/代码
 i18n_dir: :lang
 skip_render:
