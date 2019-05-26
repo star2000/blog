@@ -6,6 +6,13 @@ favicon:
 
 rss: atom.xml
 
+menu:
+  home: / || home
+  about: /关于/ || user
+  tags: /标签/ || tags
+  categories: /类别/ || th
+  archives: /归档/ || archive
+
 footer:
   since: 2019
 
@@ -37,7 +44,7 @@ codeblock:
 
 post_edit:
   enable: true
-  url: https://github.com/star2000/blog/edit/master/源/_posts
+  url: https://github.com/star2000/blog/edit/master/源
 
 mobile_layout_economy: true
 safari_rainbow: true
