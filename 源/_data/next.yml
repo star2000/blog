@@ -9,12 +9,7 @@ rss: atom.xml
 menu:
   home: / || home
   about: /关于/ || user
-  tags: /标签/ || tags
-  categories: /分类/ || th
   archives: /归档/ || archive
-
-tagcloud:
-  enable: true
 
 footer:
   since: 2019
