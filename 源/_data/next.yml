@@ -50,7 +50,7 @@ custom_scrollbar: true
 
 font:
   enable: true
-  codes:
+  global:
     external: false
     family: consolas, 楷体
 
