@@ -12,6 +12,7 @@ menu:
   home: / || home
   about: /关于/ || user
   archives: /归档/ || archive
+  tags: /标签/ || tags
 
 footer:
   since: 2019
