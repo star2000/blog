@@ -1,13 +1,14 @@
 ---
 title: aria2自启动
-tags: 随笔
+tags: 随笔 aria2
 date: 2019-04-18 16:37:00
 ---
-
+aria2 是个轻量级的多线程下载器，能轻松跑满网速，极速下载。  
+但它自身不带图形化界面，这里是我的配置
+<!--more-->
 1. [下载aria2](https://github.com/aria2/aria2/releases/latest)
 2. 将压缩包里的`aria2c.exe`复制到`C:\Windows`目录下
 3. 打开记事本，复制下面的代码
-<!--more-->
 ```vb
 CreateObject("WScript.Shell").Run "aria2c --enable-rpc -d%USERPROFILE%\Downloads -k1M -x16 -c -s1024",0
 ```

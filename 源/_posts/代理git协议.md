@@ -1,35 +1,23 @@
 ---
 title: 代理git协议
-tags: 随笔
+tags: git 代理
 date: 2019-4-25 09:18:00
 ---
-# windows上
-1. 创建~\\.ssh文件夹
-`mkdir ~\.ssh`
-2. 编写配置
-`notepad ~\.ssh\config`
-3. 写入以下内容
+网上的方法要么配置麻烦，要么有缺陷，所以这里有一行脚本
 <!--more-->
-```sh
-Host github.com
-    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+# Windows上
+打开PowerShell，执行以下命令
+```powershell
+New-Item -Path ~\.ssh\config -Value "Host github.com`n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p" -Force
 ```
 
-# linux上
-1. 安装connect命令
-`apt install connect-proxy`
-2. 创建~/.ssh文件夹
-`mkdir ~/.ssh`
-3. 编写配置
-`vim ~/.ssh/config`
-3. 写入以下内容
-```sh
-Host github.com
-    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+# Linux上
+打开终端，执行以下命令
+```bash
+mkdir ~/.ssh;apt install -y connect-proxy && echo -e 'Host github.com\n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p' > ~/.ssh/config
 ```
 
 # 名词解释
-
 名词         | 解释
 -            | -
 Host         | 匹配主机
