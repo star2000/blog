@@ -1,6 +1,6 @@
 ---
 title: vscode设置中文php文档
-tags: 随笔 vscode php
+tags: [随笔, vscode, php]
 date: 2019-05-27 14:52:09
 ---
 PHP Intelephense 中文提示

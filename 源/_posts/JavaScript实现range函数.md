@@ -1,6 +1,6 @@
 ---
 title: JavaScript实现range函数
-tags: 随笔 代码
+tags: [随笔, 代码]
 date: 2018-06-08 21:47:01
 ---
 

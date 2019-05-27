@@ -1,6 +1,6 @@
 ---
 title: debian启动卡顿
-tags: 随笔 linux
+tags: [随笔, linux]
 date: 2019-04-15 10:38:00
 ---
 
