@@ -54,6 +54,8 @@ custom_scrollbar: true
 bookmark:
   enable: true
 
+pangu: true
+
 reading_progress:
   enable: true
 
