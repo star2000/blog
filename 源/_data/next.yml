@@ -64,3 +64,6 @@ add_this_id: ra-5cea2fa6417a7081
 scroll_to_more: false
 
 save_scroll: true
+
+vendors:
+  pangu: https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js

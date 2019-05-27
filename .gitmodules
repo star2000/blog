@@ -7,6 +7,3 @@
 [submodule "源/lib/reading_progress"]
 	path = 源/lib/reading_progress
 	url = https://github.com/theme-next/theme-next-reading-progress
-[submodule "源/lib/pangu"]
-	path = 源/lib/pangu
-	url = https://github.com/theme-next/theme-next-pangu

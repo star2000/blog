@@ -84,12 +84,10 @@ deploy:
   repo: https://TOKEN_USER:TOKEN_PWD@git.dev.tencent.com/xing2000/xing2000.coding.me
 
 neat_enable: true
-
-neat_html:
-  enable: true
-
 neat_css:
-  enable: true
-
+  exclude:
+    - '**/*.min.css'
 neat_js:
-  enable: true
+  exclude:
+    - '**/*.min.js'
+    - '**/reading_progress.js'
