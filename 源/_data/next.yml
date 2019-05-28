@@ -70,7 +70,7 @@ vendors:
 
 gitalk:
   enable: true
-  github_id: 42126168
+  github_id: star2000
   repo: blog
   client_id: 91d44f97c263f0003bf5
   client_secret: 84b4eb5ddaf8adfeb2c0e8da15c457cf2f8b6e71
