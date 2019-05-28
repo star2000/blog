@@ -67,3 +67,13 @@ save_scroll: true
 
 vendors:
   pangu: https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js
+
+gitalk:
+  enable: true
+  github_id: 42126168
+  repo: blog
+  client_id: 91d44f97c263f0003bf5
+  client_secret: 84b4eb5ddaf8adfeb2c0e8da15c457cf2f8b6e71
+  admin_user: star2000
+  distraction_free_mode: true
+  language: zh-CN
