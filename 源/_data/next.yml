@@ -77,3 +77,6 @@ gitalk:
   admin_user: star2000
   distraction_free_mode: true
   language: zh-CN
+
+busuanzi_count:
+  enable: true
