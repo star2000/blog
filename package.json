@@ -6,20 +6,20 @@
     "version": "3.8.0"
   },
   "dependencies": {
-    "hexo": "*",
-    "hexo-deployer-git": "*",
-    "hexo-generator-archive": "*",
-    "hexo-generator-baidu-sitemap": "*",
-    "hexo-generator-category": "*",
-    "hexo-generator-feed": "*",
-    "hexo-generator-index": "*",
-    "hexo-generator-search": "*",
-    "hexo-generator-sitemap": "*",
-    "hexo-generator-tag": "*",
-    "hexo-neat": "*",
-    "hexo-renderer-ejs": "*",
-    "hexo-renderer-marked": "*",
-    "hexo-renderer-stylus": "*",
-    "hexo-server": "*"
+    "hexo": "latest",
+    "hexo-deployer-git": "latest",
+    "hexo-generator-archive": "latest",
+    "hexo-generator-baidu-sitemap": "latest",
+    "hexo-generator-feed": "latest",
+    "hexo-generator-index": "latest",
+    "hexo-generator-searchdb": "latest",
+    "hexo-generator-sitemap": "latest",
+    "hexo-generator-tag": "latest",
+    "hexo-neat": "latest",
+    "hexo-renderer-marked": "latest",
+    "hexo-renderer-stylus": "latest"
+  },
+  "devDependencies": {
+    "hexo-server": "latest"
   }
 }
