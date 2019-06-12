@@ -36,6 +36,6 @@ script: ./node_modules/.bin/hexo g -d
 ```
 
 [travis]: https://travis-ci.org
-[注册]: /图片/注册.jpg
-[项目令牌]: /图片/项目令牌.jpg
-[环境变量]: /图片/环境变量.jpg
+[注册]: 注册.jpg
+[项目令牌]: 项目令牌.jpg
+[环境变量]: 环境变量.jpg
