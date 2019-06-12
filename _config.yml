@@ -91,3 +91,4 @@ neat_js:
   exclude:
     - '**/*.min.js'
     - '**/reading_progress.js'
+    - '**/jquery/index.js'
