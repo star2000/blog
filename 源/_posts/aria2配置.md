@@ -1,5 +1,5 @@
 ---
-title: aria2自启动
+title: aria2配置
 tags: [随笔, aria2]
 date: 2019-04-18 16:37:00
 ---
