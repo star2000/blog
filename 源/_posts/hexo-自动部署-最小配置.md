@@ -9,13 +9,13 @@ date: 2019-05-18 18:00:54
 于是去官方文档寻找最优雅的配置。
 <!--more-->
 
-1. 注册[travis]
+# 注册[travis]
 ![注册]
-2. 创建令牌
+# 创建令牌
 ![项目令牌]
-3. 设置环境变量
+# 设置环境变量
 ![环境变量]
-4. 修改`_config.yml`
+# 修改`_config.yml`
 ```yml
 deploy:
   type: git
@@ -23,7 +23,7 @@ deploy:
   email: i@star2000.work
   repo: https://TOKEN_USER:TOKEN_PWD@git.dev.tencent.com/xing2000/xing2000.coding.me
 ```
-5. 添加`.travis.yml`
+# 添加`.travis.yml`
 ```yml
 language: node_js
 node_js: node
