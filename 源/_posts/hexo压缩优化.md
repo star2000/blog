@@ -13,6 +13,9 @@ npm i -S hexo-neat
 添加以下代码到`_config.yml`
 ```yml
 neat_enable: true
+neat_html:
+  exclude:
+    - '**/*.md'
 neat_css:
   exclude:
     - '**/*.min.css'
@@ -23,11 +26,11 @@ neat_js:
 # 测试
 使用`hexo s`运行本地服务,  
 按`f12`查看控制台, 有无js文件加载错误  
-我的博客中`reading_progress`脚本加载错误  
+我的博客中`/lib/jquery/index.js`脚本加载错误  
 按以下配置排除它
 ```yml
 neat_js:
   exclude:
     - '**/*.min.js'
-    - '**/reading_progress.js'
+    - '**/jquery/index.js'
 ```
