@@ -6,8 +6,6 @@ favicon:
 
 scheme: Gemini
 
-rss: atom.xml
-
 menu:
   home: / || home
   about: /关于/ || user
@@ -53,6 +51,7 @@ custom_scrollbar: true
 
 bookmark:
   enable: true
+  save: manual
 
 pangu: true
 
@@ -66,7 +65,11 @@ scroll_to_more: false
 save_scroll: true
 
 vendors:
-  pangu: https://cdn.bootcss.com/pangu/4.0.7/pangu.min.js
+  bookmark: https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark/bookmark.min.js
+  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
+  canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
+  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
+  reading_progress: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress/reading_progress.min.js
 
 gitalk:
   enable: true
@@ -88,3 +91,6 @@ baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
 custom_file_path:
   head: 源/_data/head.swig
+
+canvas_nest:
+  enable: true
