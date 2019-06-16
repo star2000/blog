@@ -85,3 +85,6 @@ local_search:
   enable: true
 
 baidu_analytics: 065372793e100033eb5ff98d5e248c4b
+
+custom_file_path:
+  head: 源/_data/head.swig
