@@ -21,13 +21,13 @@ cmd /c echo CreateObject("WScript.Shell").Run "aria2c --enable-rpc --rpc-allow-o
 ```
 # 前台
 以下任一方法皆可
-- [Chrome插件](https://chrome.google.com/webstore/detail/aria2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn)  
-  - 点击[`AriaNg设置`](chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/settings/ariang)，把地址改为`127.0.0.1`
-  ![配置](配置.png)
-  - 右击[`选项`](chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/options.html)，勾选 `自动拦截下载任务到Aria2c`
-  ![配置](配置2.png)
-- [在线AriaNg界面](http://ariang.mayswind.net/latest)
-  - 点击[`AriaNg设置`](http://ariang.mayswind.net/latest/#!/settings/ariang), 把地址改为`127.0.0.1`
-  ![配置](配置.png)
-- [在线简单界面](http://aria2c.com)
-  - 无需配置
+## [Chrome插件](https://chrome.google.com/webstore/detail/aria2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn)  
+- 点击[AriaNg设置](chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/ui/ariang/index.html#!/settings/ariang)，把地址改为`127.0.0.1`
+![配置](配置.png)
+- 右击[选项](chrome-extension://mpkodccbngfoacfalldjimigbofkhgjn/options.html)，勾选 `自动拦截下载任务到Aria2c`
+![配置](配置2.png)
+## [在线AriaNg界面](http://ariang.mayswind.net/latest)
+- 点击[AriaNg设置](http://ariang.mayswind.net/latest/#!/settings/ariang), 把地址改为`127.0.0.1`
+![配置](配置.png)
+## [在线简单界面](http://aria2c.com)
+- 无需配置
