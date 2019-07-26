@@ -91,3 +91,9 @@ baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
 canvas_nest:
   enable: true
+
+links_title: 我的项目
+
+links:
+  python3多语言帮助: https://github.com/star2000/i18n-python
+  必应每日壁纸: https://github.com/star2000/BingWallpaper
