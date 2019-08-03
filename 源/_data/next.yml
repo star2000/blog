@@ -49,10 +49,6 @@ mobile_layout_economy: true
 safari_rainbow: true
 custom_scrollbar: true
 
-bookmark:
-  enable: true
-  save: manual
-
 pangu: true
 
 reading_progress:
@@ -65,7 +61,6 @@ scroll_to_more: false
 save_scroll: true
 
 vendors:
-  bookmark: https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark/bookmark.min.js
   canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
   canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
   pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
