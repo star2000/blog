@@ -10,7 +10,7 @@ PHP Intelephense 中文提示
 下载后解压缩, 得到一个`out`文件夹, 下面有许多子文件夹
 # 配置
 打开PowerShell, 输入下面的命令, 接着按下`tab`键补全, 然后`enter`回车打开文件浏览器
-```powershell
+```ps1
 explorer ~\.vscode\extensions\bmewburn.vscode-intelephense-client-*\node_modules\intelephense\lib
 ```
 将此目录下原先的`stub`文件夹重命名或删除  
