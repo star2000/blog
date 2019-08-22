@@ -28,14 +28,18 @@ function* range(start, end, step = 1) {
     }
 }
 ```
+
 此函数在JavaScript中实现了python中的range函数，  
 想要使用python中的for…in结构可以这样做：
+
 ```js
 for (let i of range(10)){
     // code
 }
 ```
+
 想要返回输出数组可以这样做：
+
 ```js
 [...range(10)]
 ```

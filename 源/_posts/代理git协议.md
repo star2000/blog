@@ -5,19 +5,24 @@ date: 2019-4-25 09:18:00
 ---
 网上的方法要么配置麻烦，要么有缺陷，所以这里有一行脚本
 <!--more-->
-# Windows上
+## Windows上
+
 打开PowerShell，执行以下命令
+
 ```ps1
 New-Item -Path ~\.ssh\config -Value "Host github.com`n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p" -Force
 ```
 
-# Linux上
+## Linux上
+
 打开终端，执行以下命令
+
 ```sh
 mkdir ~/.ssh;apt install -y connect-proxy && echo -e 'Host github.com\n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p' > ~/.ssh/config
 ```
 
-# 名词解释
+## 名词解释
+
 | 名词         | 解释                                                     |
 | ------------ | -------------------------------------------------------- |
 | Host         | 匹配主机                                                 |

@@ -8,6 +8,7 @@ date: 2019-02-18 20:09:20
 想卸载又不想一个个点，这里有方便的卸载命令。  
 <!--more-->
 按`Win+R`执行以下命令
+
 ```ps1
 powershell Get-AppPackage|?{ $_.Name -ne 'Microsoft.WindowsStore'}|Remove-AppPackage -ea Ignore
 ```
