@@ -7,7 +7,7 @@ date: 2019-05-30 08:14:08
 <!--more-->
 ## 安装
 
-```sh
+```bash
 npm i -S hexo-neat
 ```
 

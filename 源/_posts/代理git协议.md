@@ -9,7 +9,7 @@ date: 2019-4-25 09:18:00
 
 打开PowerShell，执行以下命令
 
-```ps1
+```powershell
 New-Item -Path ~\.ssh\config -Value "Host github.com`n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p" -Force
 ```
 
@@ -17,7 +17,7 @@ New-Item -Path ~\.ssh\config -Value "Host github.com`n    ProxyCommand connect -
 
 打开终端，执行以下命令
 
-```sh
+```bash
 mkdir ~/.ssh;apt install -y connect-proxy && echo -e 'Host github.com\n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p' > ~/.ssh/config
 ```
 

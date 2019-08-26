@@ -9,6 +9,6 @@ date: 2019-02-18 20:09:20
 <!--more-->
 按`Win+R`执行以下命令
 
-```ps1
+```powershell
 powershell Get-AppPackage|?{ $_.Name -ne 'Microsoft.WindowsStore'}|Remove-AppPackage -ea Ignore
 ```

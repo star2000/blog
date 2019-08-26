@@ -14,7 +14,7 @@ PHP Intelephense 中文提示
 
 打开PowerShell, 输入下面的命令, 接着按下`tab`键补全, 然后`enter`回车打开文件浏览器
 
-```ps1
+```powershell
 explorer ~\.vscode\extensions\bmewburn.vscode-intelephense-client-*\node_modules\intelephense\lib
 ```
 

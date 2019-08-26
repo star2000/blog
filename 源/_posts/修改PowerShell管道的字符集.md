@@ -9,6 +9,6 @@ date: 2019-05-12 09:39:27
 之所以这样，是因为PowerShell中的管道默认字符集是ASCII  
 使用如下命令来临时更改管道的输出字符集
 
-```ps1
+```powershell
 $OutputEncoding=[Text.Encoding]::UTF8
 ```

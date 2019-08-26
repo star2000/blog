@@ -7,7 +7,7 @@ sudo, kdesu, Polkit 的单行提权命令
 <!--more-->
 - sudo
 
-```sh
+```bash
 echo '%wheel ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
 ```
 
@@ -15,7 +15,7 @@ echo '%wheel ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
 
 Octopi 免弹窗
 
-```sh
+```bash
 kwriteconfig5 --file kdesurc --group super-user-command --key super-user-command sudo
 ```
 
@@ -23,6 +23,6 @@ kwriteconfig5 --file kdesurc --group super-user-command --key super-user-command
 
 系统设置免弹窗
 
-```sh
+```bash
 echo 'polkit.addRule(function(action, subject) {if (subject.isInGroup("wheel")) {return polkit.Result.YES;}});' | sudo tee /etc/polkit-1/rules.d/49-nopasswd_global.rules
 ```
