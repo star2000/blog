@@ -12,7 +12,7 @@ jobs:
     - name: 安装nodejs
       uses: actions/setup-node@master
       with:
-        node-version: *
+        node-version: '*'
 
     - name: 安装依赖
       run: npm i --production
