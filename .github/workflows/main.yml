@@ -1,27 +1,28 @@
-on: [push]
+on:
+  - push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: 检出代码
-      uses: actions/checkout@master
-      with:
-        fetch-depth: 1
+      - name: 检出代码
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
 
-    - name: 安装nodejs
-      uses: actions/setup-node@master
-      with:
-        node-version: '*'
+      - name: 安装nodejs
+        uses: actions/setup-node@master
+        with:
+          node-version: "*"
 
-    - name: 安装依赖
-      run: npm i --production
+      - name: 安装依赖
+        run: npm i --production
 
-    - name: 环境变量
-      env:
-        TOKEN_USER: ${{ secrets.TOKEN_USER }}
-        TOKEN_PWD: ${{ secrets.TOKEN_PWD }}
-      run: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
+      - name: 环境变量
+        env:
+          TOKEN_USER: ${{ secrets.TOKEN_USER }}
+          TOKEN_PWD: ${{ secrets.TOKEN_PWD }}
+        run: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
 
-    - name: 部署
-      run: ./node_modules/.bin/hexo g -d
+      - name: 部署
+        run: ./node_modules/.bin/hexo g -d
