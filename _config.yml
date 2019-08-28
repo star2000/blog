@@ -1,8 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
 title: 星
 subtitle: 星的博客
 description: 一些踩坑总结
@@ -11,72 +6,26 @@ author: 星
 language: zh-CN
 timezone: PRC
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.star2000.work
-root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
 
-# Directory
 source_dir: 源
-public_dir: 公开
 tag_dir: 标签
 archive_dir: 归档
 category_dir: 分类
 code_dir: 下载/代码
-i18n_dir: :lang
-skip_render:
 
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
 post_asset_folder: true
-relative_link: false
-future: true
 highlight:
   enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
-  
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 0
-  order_by: -date
-  
-# Category & Tag
+  auto_detect: true
+
 default_category: 未分类
-category_map:
-tag_map:
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
 per_page: 0
 pagination_dir: 分页
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   name: 星
@@ -86,11 +35,17 @@ deploy:
 neat_enable: true
 neat_html:
   exclude:
-    - '**/*.md'
+    - "**/*.md"
 neat_css:
   exclude:
-    - '**/*.min.css'
+    - "**/*.min.css"
 neat_js:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery/index.js'
+    - "**/*.min.js"
+    - "**/js/algolia-search.js"
+    - "**/js/next-boot.js"
+    - "**/js/bookmark.js"
+    - "**/js/local-search.js"
+    - "**/js/utils.js"
+    - "**/js/schemes/muse.js"
+    - "**/js/schemes/pisces.js"

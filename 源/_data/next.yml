@@ -45,26 +45,14 @@ post_edit:
   enable: true
   url: https://github.com/star2000/blog/edit/master/源/
 
-mobile_layout_economy: true
-safari_rainbow: true
-custom_scrollbar: true
-
 pangu: true
 
-reading_progress:
-  enable: true
-
 add_this_id: ra-5cea2fa6417a7081
-
-scroll_to_more: false
-
-save_scroll: true
 
 vendors:
   canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
   canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
   pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
-  reading_progress: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress/reading_progress.min.js
 
 gitalk:
   enable: true
@@ -90,5 +78,5 @@ canvas_nest:
 links_title: 我的项目
 
 links:
-  python3多语言帮助: https://github.com/star2000/i18n-python
+  python3多语言提示: https://github.com/star2000/i18n-python
   必应每日壁纸: https://github.com/star2000/BingWallpaper
