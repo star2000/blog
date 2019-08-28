@@ -1,9 +1,8 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "blog.star2000.work",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "hexo": "latest",

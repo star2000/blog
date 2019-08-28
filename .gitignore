@@ -1,9 +1,8 @@
 .DS_Store
 Thumbs.db
-db.json
-*.log
-node_modules/
-公开/
-.deploy*/
-package-lock.json
+/.deploy*
+/db.json
+/node_modules
+/public
+/package-lock.json
 /themes
