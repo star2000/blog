@@ -1,59 +1,104 @@
+# 42
 favicon:
   small: /favicon.png
   medium: /favicon.png
   apple_touch_icon: /favicon.png
   safari_pinned_tab: /favicon.png
 
-scheme: Gemini
+# 54
+footer:
+  since: 2019
 
+# 99
+creative_commons:
+  language: zh
+
+# 119
+seo: true
+
+# 130
+google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
+# 134
+bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
+# 142
+baidu_site_verification: Nzdi1ehD60
+
+# 145
+baidu_push: true
+
+# 158
 menu:
   home: / || home
   about: /关于/ || user
   archives: /归档/ || archive
   tags: /标签/ || tags
 
-footer:
-  since: 2019
+# 182
+scheme: Gemini
 
+# 191
+site_state: false
+
+# 198
+social:
+  GitHub: https://github.com/star2000 || github
+  E-Mail: mailto:i@star2000.work || envelope
+
+# 217
+links_settings:
+  title: 我的项目
+
+# 223
+links:
+  python3多语言提示: https://github.com/star2000/i18n-python
+  必应每日壁纸: https://github.com/star2000/BingWallpaper
+
+# 227
+avatar:
+  url: /favicon.png
+  rounded: true
+
+# 303
+post_meta:
+  updated_at:
+    enable: false
+
+# 357
+post_edit:
+  enable: true
+  url: https://github.com/star2000/blog/edit/master/源/
+
+# 423
+codeblock:
+  highlight_theme: night
+  copy_button:
+    enable: true
+    show_result: true
+    style: flat
+
+# 461
 github_banner:
   enable: true
   permalink: https://github.com/star2000
   title: 在GitHub上关注我
 
-seo: true
+# 555
+pjax: true
 
-google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
-bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
-baidu_site_verification: Nzdi1ehD60
+# 559
+fancybox: true
 
-baidu_push: true
+# 568
+lazyload: true
 
-social:
-  GitHub: https://github.com/star2000 || github
-  E-Mail: mailto:i@star2000.work || envelope
-
-avatar:
-  url: /favicon.png
-  rounded: true
-
-codeblock:
-  copy_button:
-    enable: true
-    show_result: true
-
-post_edit:
-  enable: true
-  url: https://github.com/star2000/blog/edit/master/源/
-
+# 572
 pangu: true
 
-add_this_id: ra-5cea2fa6417a7081
+# 576
+quicklink:
+  enable: true
 
-vendors:
-  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
-  canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
-  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
-
+# 676
 gitalk:
   enable: true
   github_id: star2000
@@ -64,19 +109,27 @@ gitalk:
   distraction_free_mode: true
   language: zh-CN
 
+# 731
+add_this_id: ra-5cea2fa6417a7081
+
+# 740
+baidu_analytics: 065372793e100033eb5ff98d5e248c4b
+
+# 781
 busuanzi_count:
   enable: true
 
+# 815
 local_search:
   enable: true
 
-baidu_analytics: 065372793e100033eb5ff98d5e248c4b
-
+# 942
 canvas_nest:
   enable: true
 
-links_title: 我的项目
-
-links:
-  python3多语言提示: https://github.com/star2000/i18n-python
-  必应每日壁纸: https://github.com/star2000/BingWallpaper
+# 969
+vendors:
+  pjax: https://cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
+  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
+  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
+  canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
