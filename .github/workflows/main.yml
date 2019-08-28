@@ -18,6 +18,9 @@ jobs:
       - name: 安装依赖
         run: npm i --production
 
+      - name: 安装主题
+        run: git clone https://github.com/theme-next/hexo-theme-next themes/next --depth 1
+
       - name: 环境变量
         env:
           TOKEN_USER: ${{ secrets.TOKEN_USER }}
