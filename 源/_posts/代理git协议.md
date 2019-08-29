@@ -5,22 +5,23 @@ tags:
   - git
   - 代理
 ---
-网上的方法要么配置麻烦，要么有缺陷，所以这里有一行脚本
+代理git协议，免询问密码
 <!--more-->
-## Windows上
+## 前提
 
-打开PowerShell，执行以下命令
-
-```powershell
-New-Item -Path ~\.ssh\config -Value "Host github.com`n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p" -Force
-```
-
-## Linux上
-
-打开终端，执行以下命令
+如果是`linux`，需要`connect-proxy`包
 
 ```bash
-mkdir ~/.ssh;apt install -y connect-proxy && echo -e 'Host github.com\n    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p' > ~/.ssh/config
+apt install -y connect-proxy
+```
+
+## 配置
+
+编辑`~/.ssh/config`文件，添加如下配置
+
+```bash
+Host github.com
+    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
 ```
 
 ## 名词解释

@@ -12,7 +12,7 @@ source_dir: 源
 tag_dir: 标签
 archive_dir: 归档
 category_dir: 分类
-code_dir: 下载/代码
+code_dir: 代码
 
 post_asset_folder: true
 highlight:
