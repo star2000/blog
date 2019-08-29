@@ -1,7 +1,8 @@
 ---
 title: hexo压缩优化
-tags: 随笔
 date: 2019-05-30 08:14:08
+tags:
+  - hexo
 ---
 使用hexo-neat压缩html,css和js文件
 <!--more-->
@@ -30,14 +31,18 @@ neat_js:
 
 ## 测试
 
-使用`hexo s`运行本地服务,  
-按`f12`查看控制台, 有无js文件加载错误  
-我的博客中`/lib/jquery/index.js`脚本加载错误  
-按以下配置排除它
+使用`hexo g`，查看输出，有js压缩错误  
+参考以下配置排除它们
 
 ```yml
 neat_js:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery/index.js'
+    - "**/*.min.js"
+    - "**/js/algolia-search.js"
+    - "**/js/next-boot.js"
+    - "**/js/bookmark.js"
+    - "**/js/local-search.js"
+    - "**/js/utils.js"
+    - "**/js/schemes/muse.js"
+    - "**/js/schemes/pisces.js"
 ```

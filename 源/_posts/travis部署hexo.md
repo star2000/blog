@@ -1,12 +1,11 @@
 ---
-title: hexo 自动部署 最小配置
-tags: [随笔, hexo, 自动部署]
+title: travis部署hexo
 date: 2019-05-18 18:00:54
+tags: 
+  - hexo
+  - 自动部署
 ---
-今天研究了下自动部署博客，  
-在网上找到的教程中，  
-配置都比较复杂，  
-于是去官方文档寻找最优雅的配置。
+使用[travis]自动部署[hexo]博客
 <!--more-->
 
 ## 注册[travis]
@@ -45,6 +44,7 @@ script: ./node_modules/.bin/hexo g -d
 ```
 
 [travis]: https://travis-ci.org
+[hexo]: https://hexo.io
 [注册]: 注册.jpg
 [项目令牌]: 项目令牌.jpg
 [环境变量]: 环境变量.jpg

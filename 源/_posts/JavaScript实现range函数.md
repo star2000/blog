@@ -1,7 +1,8 @@
 ---
 title: JavaScript实现range函数
-tags: [随笔, 代码]
 date: 2018-06-08 21:47:01
+tags:
+  - javascript
 ---
 
 会生成一个可迭代对象，就像Python中的那样
