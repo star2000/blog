@@ -70,11 +70,10 @@ post_edit:
 
 # 423
 codeblock:
-  highlight_theme: night
   copy_button:
     enable: true
     show_result: true
-    style: flat
+    style: mac
 
 # 461
 github_banner:
