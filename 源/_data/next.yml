@@ -58,6 +58,9 @@ avatar:
   url: /favicon.png
   rounded: true
 
+# 287
+scroll_to_more: false
+
 # 303
 post_meta:
   updated_at:
