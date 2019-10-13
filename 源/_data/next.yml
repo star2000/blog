@@ -32,6 +32,7 @@ menu:
   about: /关于/ || user
   archives: /归档/ || archive
   tags: /标签/ || tags
+  留言板: https://msg.star2000.work || comments
 
 # 182
 scheme: Gemini
