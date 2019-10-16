@@ -23,9 +23,8 @@ jobs:
 
       - name: 环境变量
         env:
-          TOKEN_USER: ${{ secrets.TOKEN_USER }}
-          TOKEN_PWD: ${{ secrets.TOKEN_PWD }}
-        run: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
+          TENCENT_TOKEN: ${{ secrets.TENCENT_TOKEN }}
+        run: sed -i "s/TENCENT_TOKEN/${TENCENT_TOKEN}/" _config.yml
 
       - name: 部署
         run: ./node_modules/.bin/hexo g -d
