@@ -1,3 +1,6 @@
+# https://github.com/hexojs/hexo-starter/blob/master/_config.yml
+
+# 6
 title: 星
 subtitle: 星的博客
 description: 一些踩坑总结
@@ -6,26 +9,30 @@ author: 星
 language: zh-CN
 timezone: Asia/Shanghai
 
+# 16
 url: https://blog.star2000.work
+pretty_urls:
+  trailing_index: false
 
+# 24
 source_dir: 源
 tag_dir: 标签
 archive_dir: 归档
 category_dir: 分类
-code_dir: 代码
 
+# 43
 post_asset_folder: true
-highlight:
-  enable: true
-  auto_detect: true
 
+# 62
 default_category: 未分类
 
+# 81
 per_page: 0
-pagination_dir: 分页
 
+# 87
 theme: next
 
+# 91
 deploy:
   type: git
   name: 星

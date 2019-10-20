@@ -2,7 +2,7 @@
   "name": "blog.star2000.work",
   "private": true,
   "hexo": {
-    "version": "3.9.0"
+    "version": "4.0.0"
   },
   "dependencies": {
     "hexo": "latest",

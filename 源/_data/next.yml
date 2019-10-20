@@ -1,3 +1,5 @@
+# https://github.com/theme-next/hexo-theme-next/blob/master/_config.yml
+
 # 42
 favicon:
   small: /favicon.png
@@ -11,22 +13,13 @@ footer:
 
 # 99
 creative_commons:
+  post: true
   language: zh
 
-# 119
-seo: true
+# 110
+scheme: Gemini
 
-# 130
-google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
-# 134
-bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
-# 142
-baidu_site_verification: Nzdi1ehD60
-
-# 145
-baidu_push: true
-
-# 158
+# 127
 menu:
   home: / || home
   about: /关于/ || user
@@ -34,65 +27,75 @@ menu:
   tags: /标签/ || tags
   留言板: https://msg.star2000.work || comments
 
-# 182
-scheme: Gemini
-
-# 191
-site_state: false
-
-# 198
-social:
-  GitHub: https://github.com/star2000 || github
-  E-Mail: mailto:i@star2000.work || envelope
-
-# 227
+# 171
 avatar:
   url: /favicon.png
   rounded: true
 
-# 287
+# 182
+site_state: false
+
+# 189
+social:
+  GitHub: https://github.com/star2000 || github
+  E-Mail: mailto:i@star2000.work || envelope
+
+# 245
 scroll_to_more: false
 
-# 303
+# 261
 post_meta:
   updated_at:
     enable: false
 
-# 357
+# 315
 post_edit:
   enable: true
   url: https://github.com/star2000/blog/edit/master/源/
 
-# 423
+# 379
 codeblock:
   copy_button:
     enable: true
     show_result: true
     style: mac
 
-# 461
+# 417
 github_banner:
   enable: true
   permalink: https://github.com/star2000
   title: 在GitHub上关注我
 
-# 555
+# 489
+seo: true
+
+# 500
+google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
+# 504
+bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
+# 512
+baidu_site_verification: Nzdi1ehD60
+
+# 515
+baidu_push: true
+
+# 551
 pjax: true
 
-# 559
+# 555
 fancybox: true
 
-# 568
+# 564
 lazyload: true
 
-# 572
+# 568
 pangu: true
 
-# 576
+# 572
 quicklink:
   enable: true
 
-# 676
+# 674
 gitalk:
   enable: true
   github_id: star2000
@@ -103,17 +106,17 @@ gitalk:
   distraction_free_mode: true
   language: zh-CN
 
-# 731
+# 729
 add_this_id: ra-5cea2fa6417a7081
 
-# 740
+# 738
 baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
-# 781
+# 782
 busuanzi_count:
   enable: true
 
-# 815
+# 816
 local_search:
   enable: true
 
