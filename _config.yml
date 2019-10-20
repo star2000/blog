@@ -49,3 +49,6 @@ neat_js:
     - "**/js/utils.js"
     - "**/js/schemes/muse.js"
     - "**/js/schemes/pisces.js"
+
+sitemap:
+  template: ./sitemap_template.xml
