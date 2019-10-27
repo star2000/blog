@@ -5,30 +5,22 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出代码
-        uses: actions/checkout@master
-        with:
-          fetch-depth: 1
-
       - name: 安装nodejs
         uses: actions/setup-node@master
         with:
           node-version: "*"
 
+      - name: 下载源码
+        run: git clone --depth=1 https://github.com/$GITHUB_REPOSITORY .
+
+      - name: 下载主题
+        run: git clone --depth=1 https://github.com/theme-next/hexo-theme-next themes/next
+
       - name: 安装依赖
         run: npm i --production
 
-      - name: 下载主题
-        uses: actions/checkout@master
-        with:
-          repository: theme-next/hexo-theme-next
-          fetch-depth: 1
-          path: themes/next
-
       - name: 环境变量
-        env:
-          TENCENT_TOKEN: ${{ secrets.TENCENT_TOKEN }}
-        run: sed -i "s/TENCENT_TOKEN/${TENCENT_TOKEN}/" _config.yml
+        run: sed -i "s/TENCENT_TOKEN/${{ secrets.TENCENT_TOKEN }}/" _config.yml
 
       - name: 部署
         run: ./node_modules/.bin/hexo d
