@@ -36,17 +36,17 @@ deploy:
 neat_enable: true
 neat_html:
   exclude:
-    - "*.md"
+    - "**/*.md"
 neat_css:
   exclude:
-    - "*.min.css"
+    - "**/*.min.css"
 neat_js:
   exclude:
-    - "*.min.js"
-    - "local-search.js"
-    - "utils.js"
-    - "next-boot.js"
-    - "pisces.js"
+    - "**/*.min.js"
+    - "**/local-search.js"
+    - "**/utils.js"
+    - "**/next-boot.js"
+    - "**/pisces.js"
 
 sitemap:
   template: ./sitemap_template.xml

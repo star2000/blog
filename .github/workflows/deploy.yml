@@ -19,7 +19,7 @@ jobs:
       - name: 安装依赖
         run: npm i --production
 
-      - name: 环境变量
+      - name: 设置令牌
         run: sed -i "s/TENCENT_TOKEN/${{ secrets.TENCENT_TOKEN }}/" _config.yml
 
       - name: 部署

@@ -20,13 +20,13 @@ npm i -S hexo-neat
 neat_enable: true
 neat_html:
   exclude:
-    - "*.md"
+    - "**/*.md"
 neat_css:
   exclude:
-    - "*.min.css"
+    - "**/*.min.css"
 neat_js:
   exclude:
-    - "*.min.js"
+    - "**/*.min.js"
 ```
 
 ## 测试
@@ -37,9 +37,9 @@ neat_js:
 ```yml
 neat_js:
   exclude:
-    - "*.min.js"
-    - "local-search.js"
-    - "utils.js"
-    - "next-boot.js"
-    - "pisces.js"
+    - "**/*.min.js"
+    - "**/local-search.js"
+    - "**/utils.js"
+    - "**/next-boot.js"
+    - "**/pisces.js"
 ```
