@@ -40,7 +40,7 @@ git:
 cache: npm
 install: npm i --production
 before_script: sed -i "s/TOKEN_USER/${TOKEN_USER}/;s/TOKEN_PWD/${TOKEN_PWD}/" _config.yml
-script: ./node_modules/.bin/hexo g -d
+script: ./node_modules/.bin/hexo d
 ```
 
 [travis]: https://travis-ci.org
