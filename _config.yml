@@ -14,12 +14,6 @@ url: https://blog.star2000.work
 pretty_urls:
   trailing_index: false
 
-# 24
-source_dir: 源
-tag_dir: 标签
-archive_dir: 归档
-category_dir: 分类
-
 # 43
 post_asset_folder: true
 
@@ -42,20 +36,17 @@ deploy:
 neat_enable: true
 neat_html:
   exclude:
-    - "**/*.md"
+    - "*.md"
 neat_css:
   exclude:
-    - "**/*.min.css"
+    - "*.min.css"
 neat_js:
   exclude:
-    - "**/*.min.js"
-    - "**/js/algolia-search.js"
-    - "**/js/next-boot.js"
-    - "**/js/bookmark.js"
-    - "**/js/local-search.js"
-    - "**/js/utils.js"
-    - "**/js/schemes/muse.js"
-    - "**/js/schemes/pisces.js"
+    - "*.min.js"
+    - "local-search.js"
+    - "utils.js"
+    - "next-boot.js"
+    - "pisces.js"
 
 sitemap:
   template: ./sitemap_template.xml

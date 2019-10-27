@@ -1,11 +1,17 @@
 # https://github.com/theme-next/hexo-theme-next/blob/master/_config.yml
 
+# 20
+minify: true
+
 # 42
 favicon:
   small: /favicon.png
   medium: /favicon.png
   apple_touch_icon: /favicon.png
   safari_pinned_tab: /favicon.png
+
+# 52
+rss: atom.xml
 
 # 54
 footer:
@@ -21,10 +27,7 @@ scheme: Gemini
 
 # 127
 menu:
-  home: / || home
-  about: /关于/ || user
-  archives: /归档/ || archive
-  tags: /标签/ || tags
+  tags: /tags/ || tags
   留言板: https://msg.star2000.work || comments
 
 # 171
@@ -51,7 +54,7 @@ post_meta:
 # 315
 post_edit:
   enable: true
-  url: https://github.com/star2000/blog/edit/master/源/
+  url: https://github.com/star2000/blog/edit/master/source/
 
 # 379
 codeblock:
