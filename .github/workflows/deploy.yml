@@ -11,7 +11,7 @@ jobs:
           node-version: "*"
 
       - name: 下载源码
-        run: git clone --depth=1 https://github.com/${{ github.repository }} .
+        run: git clone --depth=1 ${{ github.repositoryUrl }} .
 
       - name: 下载主题
         run: git clone --depth=1 https://github.com/theme-next/hexo-theme-next themes/next
