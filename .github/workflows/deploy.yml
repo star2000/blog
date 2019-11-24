@@ -23,4 +23,4 @@ jobs:
         run: sed -i "s/TENCENT_TOKEN/${{ secrets.TENCENT_TOKEN }}/" _config.yml
 
       - name: 部署
-        run: ./node_modules/.bin/hexo d
+        run: npm run deploy

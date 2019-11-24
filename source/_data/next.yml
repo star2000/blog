@@ -28,6 +28,7 @@ scheme: Gemini
 # 127
 menu:
   tags: /tags/ || tags
+  SSR: /SSR/ || paper-plane
   留言板: https://msg.star2000.work || comments
 
 # 171
