@@ -31,7 +31,7 @@ deploy:
   type: git
   name: 星
   email: i@star2000.work
-  repo: https://xing2000:TENCENT_TOKEN@git.dev.tencent.com/xing2000/xing2000.coding.me
+  repo: https://star2000:CODING_TOKEN@e.coding.net/CODING_REPO
 
 neat_enable: true
 neat_html:

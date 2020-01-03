@@ -20,7 +20,10 @@ jobs:
         run: npm i --production
 
       - name: 设置令牌
-        run: sed -i "s/TENCENT_TOKEN/${{ secrets.TENCENT_TOKEN }}/" _config.yml
+        run: sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
+
+      - name: 设置仓库
+        run: sed -i "s|CODING_REPO|${{ secrets.CODING_REPO }}|" _config.yml
 
       - name: 部署
         run: npm run deploy
