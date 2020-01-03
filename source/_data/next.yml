@@ -10,14 +10,11 @@ favicon:
   apple_touch_icon: /favicon.png
   safari_pinned_tab: /favicon.png
 
-# 52
-rss: atom.xml
-
-# 54
+# 50
 footer:
   since: 2019
 
-# 99
+# 95
 creative_commons:
   post: true
   language: zh
@@ -25,13 +22,15 @@ creative_commons:
 # 110
 scheme: Gemini
 
-# 127
+# 122
 menu:
+  home: / || home
   tags: /tags/ || tags
+  archives: /archives/ || archive
   SSR: /SSR/ || paper-plane
   留言板: https://msg.star2000.work || comments
 
-# 171
+# 168
 avatar:
   url: /favicon.png
   rounded: true
@@ -39,67 +38,63 @@ avatar:
 # 182
 site_state: false
 
-# 189
+# 183
 social:
   GitHub: https://github.com/star2000 || github
   E-Mail: mailto://i@star2000.work || envelope
+  RSS: /atom.xml || rss
 
-# 245
-scroll_to_more: false
-
-# 261
+# 247
 post_meta:
   updated_at:
     enable: false
 
-# 315
+# 295
 post_edit:
   enable: true
   url: https://github.com/star2000/blog/edit/master/source/
 
-# 379
+# 354
 codeblock:
   copy_button:
     enable: true
     show_result: true
     style: mac
 
-# 417
+# 392
 github_banner:
   enable: true
   permalink: https://github.com/star2000
   title: 在GitHub上关注我
 
-# 489
+# 464
 seo: true
 
-# 500
+# 475
 google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
-# 504
 bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
-# 512
 baidu_site_verification: Nzdi1ehD60
 
-# 515
+# 490
 baidu_push: true
 
-# 551
+# 523
 pjax: true
 
-# 555
+# 527
 fancybox: true
 
-# 564
+# 536
 lazyload: true
 
-# 568
+# 540
 pangu: true
 
-# 572
+# 545
 quicklink:
   enable: true
 
-# 674
+# 642
 gitalk:
   enable: true
   github_id: star2000
@@ -110,27 +105,27 @@ gitalk:
   distraction_free_mode: true
   language: zh-CN
 
-# 729
+# 670
 add_this_id: ra-5cea2fa6417a7081
 
-# 738
+# 686
 baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
-# 782
+# 719
 busuanzi_count:
   enable: true
 
-# 816
+# 747
 local_search:
   enable: true
 
-# 942
+# 871
 canvas_nest:
   enable: true
 
-# 969
+# 898
 vendors:
   pjax: https://cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
   pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
-  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
   canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
+  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js

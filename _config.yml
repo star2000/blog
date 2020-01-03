@@ -14,19 +14,13 @@ url: https://blog.star2000.work
 pretty_urls:
   trailing_index: false
 
-# 43
+# 44
 post_asset_folder: true
 
-# 62
-default_category: 未分类
-
-# 81
-per_page: 0
-
-# 87
+# 96
 theme: next
 
-# 91
+# 100
 deploy:
   type: git
   name: 星
