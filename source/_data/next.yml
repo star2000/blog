@@ -41,7 +41,7 @@ site_state: false
 # 183
 social:
   GitHub: https://github.com/star2000 || github
-  E-Mail: mailto://i@star2000.work || envelope
+  E-Mail: mailto:i@star2000.work || envelope
   RSS: /atom.xml || rss
 
 # 247
