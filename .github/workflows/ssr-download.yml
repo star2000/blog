@@ -21,4 +21,4 @@ jobs:
           git config user.name ${{ github.event.pusher.name }}
           git config user.email ${{ github.event.pusher.email }}
           git commit -m '自动同步'
-          git push -f https://star2000:${{ secrets.CODING_TOKEN }}@e.coding.net/${{ secrets.CODING_REPO }}/ssr-download
+          git push -f https://star2000:${{ secrets.CODING_TOKEN }}@e.coding.net/${{ secrets.CODING_REPO }}/ssr-download master:master
