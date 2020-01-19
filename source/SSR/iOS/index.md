@@ -23,4 +23,4 @@ tags:
 如果是首次连接，则系统会弹出建立网络连接提示框，请点击「Allow/同意」
 ![4](4.png)
 
-[Potatso Lite]: itms-services://?action=download-manifest&url=https://shadowsockshelp.github.io/Potatso-Lite/ipa.plist
+[Potatso Lite]: itms-services://?action=download-manifest&url=https://ssr-download.star2000.work/potatso-lite.plist

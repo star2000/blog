@@ -5,25 +5,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 安装nodejs
-        uses: actions/setup-node@master
+      - uses: actions/setup-node@master
         with:
           node-version: "*"
 
-      - name: 下载源码
-        run: git clone --depth=1 ${{ github.repositoryUrl }} .
-
-      - name: 下载主题
-        run: git clone --depth=1 https://github.com/theme-next/hexo-theme-next themes/next
-
-      - name: 安装依赖
-        run: npm i --production
-
-      - name: 设置令牌
-        run: sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
-
-      - name: 设置仓库
-        run: sed -i "s|CODING_REPO|${{ secrets.CODING_REPO }}|" _config.yml
-
-      - name: 部署
-        run: npm run deploy
+      - run: |
+          git clone --depth=1 ${{ github.repositoryUrl }} .
+          git clone --depth=1 https://github.com/theme-next/hexo-theme-next themes/next
+          npm i --production
+          sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
+          sed -i "s|CODING_REPO|${{ secrets.CODING_REPO }}|" _config.yml
+          npm run deploy

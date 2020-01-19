@@ -20,4 +20,4 @@ tags:
 4. 双击托盘栏纸飞机图标，选择以FreeSSR-public 开头的示例节点「删除(D)」，然后点击「确定」。
 5. 右击托盘栏纸飞机图标，点击「选项设置」，勾选「开机启动」，然后点击「确定」。
 
-[ShadowsocksR]: https://cdn.jsdelivr.net/gh/xcxnig/ssr-download/ssr-win.7z
+[ShadowsocksR]: https://ssr-download.star2000.work/ssr-win.7z

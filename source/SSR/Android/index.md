@@ -11,6 +11,6 @@ tags:
 
 ## 配置
 
-<video src="https://star2000.work/static/video/SSRR订阅教程.webm" controls autoplay></video>
+<video src="SSRR订阅教程.webm" controls autoplay></video>
 
-[SSRR]: https://cdn.jsdelivr.net/gh/xcxnig/ssr-download/ssrr-android.apk
+[SSRR]: https://ssr-download.star2000.work/ssrr-android.apk

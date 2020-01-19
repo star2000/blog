@@ -18,4 +18,4 @@ tags:
 3. 在「服务器」选项中点击「手动更新订阅」。
 ![3](3.png)
 
-[ShadowsocksX-NG-R8]: https://cdn.jsdelivr.net/gh/xcxnig/ssr-download/ssr-mac.dmg
+[ShadowsocksX-NG-R8]: https://ssr-download.star2000.work/ssr-mac.dmg
