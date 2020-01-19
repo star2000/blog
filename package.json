@@ -8,7 +8,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.0.0"
+    "version": ""
   },
   "dependencies": {
     "hexo": "latest",
@@ -20,7 +20,6 @@
     "hexo-generator-searchdb": "latest",
     "hexo-generator-sitemap": "latest",
     "hexo-generator-tag": "latest",
-    "hexo-neat": "latest",
     "hexo-renderer-marked": "latest",
     "hexo-renderer-stylus": "latest"
   },

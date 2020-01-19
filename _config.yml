@@ -27,20 +27,5 @@ deploy:
   email: i@star2000.work
   repo: https://star2000:CODING_TOKEN@e.coding.net/CODING_REPO
 
-neat_enable: true
-neat_html:
-  exclude:
-    - "**/*.md"
-neat_css:
-  exclude:
-    - "**/*.min.css"
-neat_js:
-  exclude:
-    - "**/*.min.js"
-    - "**/local-search.js"
-    - "**/utils.js"
-    - "**/next-boot.js"
-    - "**/pisces.js"
-
 sitemap:
   template: ./sitemap_template.xml
