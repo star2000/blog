@@ -96,7 +96,7 @@ canvas_nest:
 
 vendors:
   anime: https://cdn.jsdelivr.net/npm/animejs
-  fontawesome: https://cdn.jsdelivr.net/npm/fontawesome
+  fontawesome: https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
   pjax: https://cdn.jsdelivr.net/npm/pjax
   jquery: https://cdn.jsdelivr.net/npm/jquery
   fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox
