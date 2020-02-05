@@ -1,0 +1,21 @@
+on:
+  push:
+    paths:
+      - .github/workflows/static.yml
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          wget -qO v2rayN.zip $(wget -qO- api.github.com/repos/2dust/v2rayN/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("v2rayN.zip"))')
+          wget -qO v2rayNG.apk $(wget -qO- api.github.com/repos/2dust/v2rayNG/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
+          wget -qO V2rayU.dmg $(wget -qO- api.github.com/repos/yanue/V2rayU/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
+          git init
+          git add .
+          git config user.name star2000
+          git config user.email i@star2000.work
+          git commit -m '自动同步'
+          git push -f https://star2000:${{ secrets.CODING_TOKEN }}@e.coding.net/${{ secrets.CODING_REPO }}/static master:master

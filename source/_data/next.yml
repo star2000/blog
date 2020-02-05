@@ -1,18 +1,11 @@
 # https://github.com/theme-next/hexo-theme-next/blob/master/_config.yml
 
-# 20
-minify: true
-
 # 42
 favicon:
   small: /favicon.png
   medium: /favicon.png
   apple_touch_icon: /favicon.png
   safari_pinned_tab: /favicon.png
-
-# 50
-footer:
-  since: 2019
 
 # 95
 creative_commons:
@@ -27,7 +20,6 @@ menu:
   home: / || home
   tags: /tags/ || tags
   archives: /archives/ || archive
-  SSR: /SSR/ || paper-plane
   留言板: https://msg.star2000.work || comments
 
 # 168
@@ -35,97 +27,69 @@ avatar:
   url: /favicon.png
   rounded: true
 
-# 182
-site_state: false
-
 # 183
 social:
   GitHub: https://github.com/star2000 || github
   E-Mail: mailto:i@star2000.work || envelope
   RSS: /atom.xml || rss
 
-# 247
+# 246
 post_meta:
   updated_at:
     enable: false
 
-# 295
+# 303
 post_edit:
   enable: true
   url: https://github.com/star2000/blog/edit/master/source/
 
-# 354
+# 362
 codeblock:
   copy_button:
     enable: true
     show_result: true
-    style: mac
 
-# 392
-github_banner:
-  enable: true
-  permalink: https://github.com/star2000
-  title: 在GitHub上关注我
-
-# 464
+# 472
 seo: true
 
-# 475
+# 483
 google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
 bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
 baidu_site_verification: Nzdi1ehD60
-
-# 490
 baidu_push: true
 
-# 523
+# 531
 pjax: true
-
-# 527
 fancybox: true
-
-# 536
 lazyload: true
-
-# 540
 pangu: true
-
-# 545
 quicklink:
   enable: true
 
-# 642
-gitalk:
+# 627
+valine:
   enable: true
-  github_id: star2000
-  repo: blog
-  client_id: 91d44f97c263f0003bf5
-  client_secret: 84b4eb5ddaf8adfeb2c0e8da15c457cf2f8b6e71
-  admin_user: star2000
-  distraction_free_mode: true
-  language: zh-CN
+  appid: 5V1P7RrYzsbHXlyYrFpvIhvG-gzGzoHsz
+  appkey: Tnvs4SdQ3F4BfL1gMsdzjlQw
+  notify: true
+  verify: true
+  language: zh-cn
+  recordIP: true
 
-# 670
+# 678
 add_this_id: ra-5cea2fa6417a7081
 
-# 686
+# 694
 baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
-# 719
+# 727
 busuanzi_count:
   enable: true
 
-# 747
+# 755
 local_search:
   enable: true
 
 # 871
 canvas_nest:
   enable: true
-
-# 898
-vendors:
-  pjax: https://cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
-  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
-  canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
-  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
