@@ -95,15 +95,7 @@ canvas_nest:
   enable: true
 
 vendors:
-  anime: https://cdn.jsdelivr.net/npm/animejs
-  fontawesome: https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
-  pjax: https://cdn.jsdelivr.net/npm/pjax
-  jquery: https://cdn.jsdelivr.net/npm/jquery
-  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox
-  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css
-  lazyload: https://cdn.jsdelivr.net/npm/lazyload
-  pangu: https://cdn.jsdelivr.net/npm/pangu
-  quicklink: https://cdn.jsdelivr.net/npm/quicklink
-  valine: https://cdn.jsdelivr.net/npm/valine
+  pjax: https://cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
+  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
   canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
   canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
