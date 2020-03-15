@@ -20,6 +20,7 @@ menu:
   home: / || home
   tags: /tags/ || tags
   archives: /archives/ || archive
+  留言板: /msg/ || comments
 
 # 168
 avatar:
