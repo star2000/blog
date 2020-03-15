@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          wget -qO v2rayN.zip $(wget -qO- api.github.com/repos/2dust/v2rayN/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("v2rayN.zip"))')
+          wget -qO v2rayN.zip $(wget -qO- api.github.com/repos/2dust/v2rayN/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
           wget -qO v2rayNG.apk $(wget -qO- api.github.com/repos/2dust/v2rayNG/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
           wget -qO V2rayU.dmg $(wget -qO- api.github.com/repos/yanue/V2rayU/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
           git init
