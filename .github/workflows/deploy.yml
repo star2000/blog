@@ -1,7 +1,7 @@
 on:
   push:
     paths-ignore:
-      - .github/workflows/*
+      - .github/workflows/static.yml
 
 jobs:
   deploy:
@@ -10,11 +10,13 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: "*"
-
+      - uses: actions/checkout@master
+      - uses: actions/checkout@master
+        with:
+          repository: theme-next/hexo-theme-next
+          path: themes/next
       - run: |
-          git clone --depth=1 ${{ github.repositoryUrl }} .
-          git clone --depth=1 https://github.com/theme-next/hexo-theme-next themes/next
-          npm i --production
           sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
           sed -i "s|CODING_REPO|${{ secrets.CODING_REPO }}|" _config.yml
+          npm i --production
           npm run deploy
