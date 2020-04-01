@@ -17,6 +17,5 @@ jobs:
           path: themes/next
       - run: |
           sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
-          sed -i "s|CODING_REPO|${{ secrets.CODING_REPO }}|" _config.yml
           npm i --production
           npm run deploy

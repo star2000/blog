@@ -25,7 +25,7 @@ deploy:
   type: git
   name: 星
   email: i@star2000.work
-  repo: https://star2000:CODING_TOKEN@e.coding.net/CODING_REPO
+  repo: https://CODING_TOKEN@e.coding.net/xing2000/blog/deploy
 
 sitemap:
   template: ./sitemap_template.xml
