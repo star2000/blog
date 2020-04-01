@@ -4,7 +4,7 @@ date: 2020-2-5 00:00:00
 ---
 ## 安装
 
-安装[v2rayNG]
+安装<a href="https://static.star2000.work/v2rayNG.apk" download>v2rayNG</a>
 
 ## 配置
 
@@ -12,5 +12,3 @@ date: 2020-2-5 00:00:00
 ![](2.jpg)
 
 然后返回, 点"右上角菜单"中的"更新订阅"
-
-[v2rayNG]: https://static.star2000.work/v2rayNG.apk

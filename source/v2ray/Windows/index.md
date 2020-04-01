@@ -4,7 +4,7 @@ date: 2020-2-5 00:00:00
 ---
 ## 安装
 
-下载[v2rayN], 解压, 双击`v2rayN`
+下载<a href="https://static.star2000.work/v2rayN.zip" download>v2rayN</a>, 解压, 双击`v2rayN`
 
 ![](1.png)
 
@@ -26,5 +26,3 @@ date: 2020-2-5 00:00:00
 5. "v2rayN设置">选中"开机自动启动", 点"确定"
 
 ![](6.png)
-
-[v2rayN]: https://static.star2000.work/v2rayN.zip

@@ -9,7 +9,8 @@ date: 2020-2-5 00:00:00
 brew cask install v2rayu
 ```
 - 方式二: 下载最新版安装
-> [V2rayU]
+
+<a href="https://static.star2000.work/V2rayU.dmg" download>V2rayU</a>
 
 ## 配置
 
@@ -19,5 +20,3 @@ brew cask install v2rayu
 4. 点击"PAC模式"或"全局模式"
 
 ![](1.jpg)
-
-[V2rayU]: https://static.star2000.work/V2rayU.dmg
