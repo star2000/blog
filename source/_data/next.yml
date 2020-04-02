@@ -7,95 +7,99 @@ favicon:
   apple_touch_icon: /favicon.png
   safari_pinned_tab: /favicon.png
 
-# 95
+# 88
 creative_commons:
   post: true
   language: zh
 
-# 110
+# 103
 scheme: Gemini
 
-# 122
-menu:
-  home: / || home
-  tags: /tags/ || tags
-  archives: /archives/ || archive
-  留言板: /msg/ || comments
+# 106
+darkmode: true
 
-# 168
+# 118
+menu:
+  home: / || fa fa-home
+  tags: /tags/ || fa fa-tags
+  archives: /archives/ || fa fa-archive
+  留言板: /msg/ || fa fa-comments
+
+# 164
 avatar:
   url: /favicon.png
   rounded: true
 
-# 183
+# 179
 social:
-  GitHub: https://github.com/star2000 || github
-  E-Mail: mailto:i@star2000.work || envelope
-  RSS: /atom.xml || rss
+  GitHub: https://github.com/star2000 || fab fa-github
+  E-Mail: mailto:i@star2000.work || fa fa-envelope
 
-# 246
+# 242
 post_meta:
   updated_at:
     enable: false
 
-# 303
+# 276
+follow_me:
+  RSS: /atom.xml || fa fa-rss
+
+# 297
 post_edit:
   enable: true
   url: https://github.com/star2000/blog/edit/master/source/
 
-# 362
+# 353
 codeblock:
+  highlight_theme: night
   copy_button:
     enable: true
     show_result: true
+    style: flat
 
-# 472
-seo: true
-
-# 483
+# 466
 google_site_verification: 9iXxtIk--IyJjFW8N37G7kFgeQiXdXKkFZIR-SgjHZY
 bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
 baidu_site_verification: Nzdi1ehD60
 baidu_push: true
 
-# 531
-pjax: true
+# 519
 fancybox: true
 lazyload: true
 pangu: true
 quicklink:
   enable: true
 
-# 627
+# 612
 valine:
   enable: true
   appid: 5V1P7RrYzsbHXlyYrFpvIhvG-gzGzoHsz
   appkey: Tnvs4SdQ3F4BfL1gMsdzjlQw
   notify: true
   verify: true
+  placeholder: 说点什么
   language: zh-cn
   recordIP: true
 
-# 678
+# 663
 add_this_id: ra-5cea2fa6417a7081
 
-# 694
+# 679
 baidu_analytics: 065372793e100033eb5ff98d5e248c4b
 
-# 727
+# 713
 busuanzi_count:
   enable: true
 
-# 755
+# 741
 local_search:
   enable: true
 
-# 871
 canvas_nest:
   enable: true
 
+# 880
 vendors:
-  pjax: https://cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
   pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
   canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
   canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
