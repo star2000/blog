@@ -12,8 +12,10 @@ jobs:
           node-version: "*"
       - uses: actions/checkout@master
         with:
+          fetch-depth: 0
           submodules: true
       - run: |
+          git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
           sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
           npm i --production
           npm run deploy
