@@ -61,12 +61,11 @@ bing_site_verification: 2DB1123716982A76BC4F3804CD11D61C
 baidu_site_verification: Nzdi1ehD60
 baidu_push: true
 
-# 519
+# 515
+pjax: true
 fancybox: true
 lazyload: true
 pangu: true
-quicklink:
-  enable: true
 
 # 612
 valine:
@@ -98,6 +97,7 @@ canvas_nest:
 
 # 880
 vendors:
-  pangu: https://cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
-  canvas_nest: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
-  canvas_nest_nomobile: https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
+  pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
+  pangu: //cdn.jsdelivr.net/gh/vinta/pangu.js/dist/browser/pangu.min.js
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest/canvas-nest-nomobile.min.js
