@@ -11,10 +11,8 @@ jobs:
         with:
           node-version: "*"
       - uses: actions/checkout@master
-      - uses: actions/checkout@master
         with:
-          repository: theme-next/hexo-theme-next
-          path: themes/next
+          submodules: true
       - run: |
           sed -i "s|CODING_TOKEN|${{ secrets.CODING_TOKEN }}|" _config.yml
           npm i --production
