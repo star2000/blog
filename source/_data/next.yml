@@ -35,11 +35,6 @@ social:
   GitHub: https://github.com/star2000 || fab fa-github
   E-Mail: mailto:i@star2000.work || fa fa-envelope
 
-# 242
-post_meta:
-  updated_at:
-    enable: false
-
 # 276
 follow_me:
   RSS: /atom.xml || fa fa-rss
