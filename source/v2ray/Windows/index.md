@@ -2,9 +2,10 @@
 title: V2ray使用教程/Windows
 date: 2020-2-5 00:00:00
 ---
+
 ## 安装
 
-下载<a href="https://static.star2000.work/v2rayN.zip" download>v2rayN</a>, 解压, 双击`v2rayN`
+下载<a href="https://xing2000.coding.net/p/blog/d/static/git/raw/master/v2rayN.zip" download>v2rayN</a>, 解压, 双击`v2rayN`
 
 ![](1.png)
 
@@ -19,10 +20,10 @@ date: 2020-2-5 00:00:00
 ![](3.jpg)
 
 3. "订阅">"订阅更新"
-4. "参数设置">"Http代理"改为"全局模式"
+4. "参数设置">"Http 代理"改为"全局模式"
 
 ![](4.png)
 
-5. "v2rayN设置">选中"开机自动启动", 点"确定"
+5. "v2rayN 设置">选中"开机自动启动", 点"确定"
 
 ![](6.png)
