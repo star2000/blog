@@ -23,7 +23,7 @@ theme: next
 # 100
 deploy:
   type: git
-  name: 星
+  name: star2000
   email: i@star2000.work
   repo: https://CODING_TOKEN@e.coding.net/xing2000/blog/deploy
 
