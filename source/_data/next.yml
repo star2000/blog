@@ -2,10 +2,10 @@
 
 # 42
 favicon:
-  small: /favicon.png
-  medium: /favicon.png
-  apple_touch_icon: /favicon.png
-  safari_pinned_tab: /favicon.png
+  small: /images/favicon.png
+  medium: /images/favicon.png
+  apple_touch_icon: /images/favicon.png
+  safari_pinned_tab: /images/favicon.png
 
 # 88
 creative_commons:
@@ -27,13 +27,21 @@ menu:
 
 # 164
 avatar:
-  url: /favicon.png
+  url: /images/favicon.png
   rounded: true
 
 # 179
 social:
   GitHub: https://github.com/star2000 || fab fa-github
   E-Mail: mailto:i@star2000.work || fa fa-envelope
+
+# 262
+reward_settings:
+  enable: true
+
+# 268
+reward:
+  alipay: /images/alipay.png
 
 # 276
 follow_me:
