@@ -6,7 +6,7 @@ tags:
   - debian
 ---
 
-在更新为 testing 并重启后，卡顿了将近两分钟时间
+debian 开机卡顿了将近两分钟时间
 
 <!--more-->
 

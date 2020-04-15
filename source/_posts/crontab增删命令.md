@@ -5,6 +5,7 @@ date: 2019-08-31 20:27:22
 tags:
   - linux
   - crontab
+  - shell
 ---
 
 更简单的在脚本中使用 crontab

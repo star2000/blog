@@ -1,5 +1,5 @@
 ---
-title: linux鉴权免密
+title: linux提权免密
 date: 2019-03-21 15:30:44
 tags:
   - linux
@@ -17,7 +17,7 @@ echo '%wheel ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
 
 - kdesu
 
-Octopi 免弹窗
+Octopi 免弹窗, 依赖`sudo`免密
 
 ```bash
 kwriteconfig5 --file kdesurc --group super-user-command --key super-user-command sudo

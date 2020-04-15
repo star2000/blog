@@ -2,7 +2,7 @@
 title: 修改PowerShell管道的字符集
 date: 2019-05-12 09:39:27
 tags:
-  - powershell
+  - shell
 ---
 
 当我使用 PowerShell 运行`'print("你好")' | py`时，输出两个问号
