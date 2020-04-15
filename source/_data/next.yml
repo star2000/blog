@@ -103,6 +103,11 @@ local_search:
 canvas_nest:
   enable: true
 
+# 786
+note:
+  style: flat
+  icons: true
+
 # 880
 vendors:
   pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax/pjax.min.js
