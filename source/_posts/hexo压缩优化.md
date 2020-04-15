@@ -4,8 +4,11 @@ date: 2019-05-30 08:14:08
 tags:
   - hexo
 ---
-使用hexo-neat压缩html,css和js文件
+
+使用 hexo-neat 压缩 html,css 和 js 文件
+
 <!--more-->
+
 ## 安装
 
 ```bash
@@ -31,7 +34,7 @@ neat_js:
 
 ## 测试
 
-使用`hexo g`，查看输出，如有js压缩错误  
+使用`hexo g`，查看输出，如有 js 压缩错误  
 参考以下配置跳过它们
 
 ```yml

@@ -6,8 +6,11 @@ tags:
   - linux
   - crontab
 ---
-更简单的在脚本中使用crontab
+
+更简单的在脚本中使用 crontab
+
 <!--more-->
+
 ## 添加
 
 ```bash

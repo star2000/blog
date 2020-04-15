@@ -1,11 +1,14 @@
 ---
 title: linux鉴权免密
 date: 2019-03-21 15:30:44
-tags: 
+tags:
   - linux
 ---
+
 sudo，kdesu，Polkit 的单行提权命令
+
 <!--more-->
+
 - sudo
 
 ```bash

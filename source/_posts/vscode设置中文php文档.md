@@ -5,8 +5,11 @@ tags:
   - vscode
   - php
 ---
+
 PHP Intelephense 中文帮助
+
 <!--more-->
+
 ## 下载
 
 [汉化包地址](https://github.com/fw6669998/php-doc/raw/master/document/out.zip)

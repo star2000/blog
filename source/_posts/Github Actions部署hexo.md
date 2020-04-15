@@ -4,10 +4,13 @@ date: 2019-08-29 09:06:07
 tags:
   - hexo
   - 自动部署
-permalink: 
+permalink:
 ---
+
 使用[Github Actions]自动部署[hexo]博客
+
 <!--more-->
+
 ## 创建令牌
 
 ![创建令牌](创建令牌.png)
@@ -31,8 +34,7 @@ deploy:
 ## 创建`.github/workflows/deploy.yml`
 
 ```yml .github/workflows/deploy.yml
-on:
-  push
+on: push
 
 jobs:
   deploy:
@@ -54,5 +56,5 @@ jobs:
           npm run deploy
 ```
 
-[Github Actions]: https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions
+[github actions]: https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions
 [hexo]: https://hexo.io
