@@ -15,11 +15,11 @@ jobs:
           wget -qO V2rayU.dmg $(wget -qO- api.github.com/repos/yanue/V2rayU/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
 
           wget -qO aria2-64bit.zip $(wget -qO- api.github.com/repos/aria2/aria2/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("win-64bit"))')
-          unar -o - aria2-64bit.zip */aria2c.exe > aria2c-64bit.exe
+          unzip -p aria2-64bit.zip */aria2c.exe > aria2c-64bit.exe
           rm -f aria2-64bit.zip
 
           wget -qO aria2-32bit.zip $(wget -qO- api.github.com/repos/aria2/aria2/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("win-32bit"))')
-          unar -o - aria2-32bit.zip */aria2c.exe > aria2c-32bit.exe
+          unzip -p aria2-32bit.zip */aria2c.exe > aria2c-32bit.exe
           rm -f aria2-32bit.zip
 
           git init
