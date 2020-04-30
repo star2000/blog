@@ -15,11 +15,11 @@ tags:
 ## 添加
 
 ```bash
-crontab -l | sed '1i\0 0 * * * reboot' | crontab
+(crontab -l 2>/dev/null;echo '0 0 * * * reboot') | crontab -
 ```
 
 ## 删除
 
 ```bash
-crontab -l | sed /reboot/d | crontab
+crontab -l | sed '/reboot/d' | crontab -
 ```
