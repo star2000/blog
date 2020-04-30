@@ -21,5 +21,5 @@ tags:
 ## 删除
 
 ```bash
-crontab -l | sed '/reboot/d' | crontab -
+crontab -l 2>/dev/null | sed '/reboot/d' | crontab -
 ```
