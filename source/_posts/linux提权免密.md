@@ -9,6 +9,8 @@ sudo，kdesu，Polkit 的单行提权命令
 
 <!--more-->
 
+`wheel`组提权免密
+
 - sudo
 
 ```bash
