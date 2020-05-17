@@ -5,7 +5,7 @@ date: 2020-2-5 00:00:00
 
 ## 安装
 
-下载<a href="https://xing2000.coding.net/p/blog/d/static/git/raw/master/v2rayN.zip" download>v2rayN</a>, 解压, 双击`v2rayN`
+下载<a href="https://xing2000.coding.net/p/static/d/static/git/raw/master/v2rayN.zip" download>v2rayN</a>, 解压, 双击`v2rayN`
 
 ![](1.png)
 

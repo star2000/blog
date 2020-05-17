@@ -13,7 +13,7 @@ brew cask install v2rayu
 
 - 方式二: 下载最新版安装
 
-<a href="https://xing2000.coding.net/p/blog/d/static/git/raw/master/V2rayU.dmg" download>V2rayU</a>
+<a href="https://xing2000.coding.net/p/static/d/static/git/raw/master/V2rayU.dmg" download>V2rayU</a>
 
 ## 配置
 

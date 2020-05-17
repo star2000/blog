@@ -27,4 +27,4 @@ jobs:
           git config user.name star2000
           git config user.email i@star2000.work
           git commit -m '自动同步'
-          git push -f https://${{ secrets.CODING_TOKEN }}@e.coding.net/xing2000/blog/static master:master
+          git push -f https://${{ secrets.CODING_TOKEN }}@e.coding.net/xing2000/static master:master
