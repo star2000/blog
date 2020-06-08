@@ -7,10 +7,6 @@ date: 2020-2-5 00:00:00
 首先获得订阅地址
 {% endnote %}
 
-## 然后选择系统
-
-- [Windows](Windows)
 - [安卓](Android)
-- [苹果电脑](MacOS)
 - [苹果手机](iOS)
-- [Linux](https://github.com/Qv2ray/Qv2ray)
+- [Windows/Mac/Linux](https://qv2ray.github.io/)
