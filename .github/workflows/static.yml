@@ -11,6 +11,7 @@ jobs:
     steps:
       - run: |
           wget -qO 1.apk $(wget -qO- api.github.com/repos/2dust/v2rayNG/releases?per_page=1 | jq -r '.[0].assets[0].browser_download_url')
+          echo $(date) | zip -z 1.apk
 
           wget -qO aria2-64bit.zip $(wget -qO- api.github.com/repos/aria2/aria2/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("win-64bit"))')
           unzip -p aria2-64bit.zip */aria2c.exe > aria2c-64bit.exe
