@@ -5,7 +5,7 @@ date: 2020-2-5 00:00:00
 
 ## 安装
 
-安装[v2rayNG](https://netfiles.pw/download.php?filename=/v2/android/v2rayNG-v1.2.10.apk)
+安装[v2rayNG](https://netfiles.pw/download.php?filename=/v2/android/v2rayNG-v1.2.13.apk)
 
 ## 配置
 

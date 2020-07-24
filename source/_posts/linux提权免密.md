@@ -11,6 +11,8 @@ sudo，kdesu，Polkit 的单行提权命令
 
 `wheel`组提权免密
 
+`arch`系可以安装`aur`中我写的`nopasswd`包
+
 - sudo
 
 ```bash
