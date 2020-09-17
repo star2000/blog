@@ -39,3 +39,28 @@ echo -e '[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxc
 ```bash
 pamac build --no-confirm autoupgrade
 ```
+
+6. [修正配置 Noto Sans CJK 避免中文显示为异体（日文）字形](https://tieba.baidu.com/p/4879946717)
+
+```bash
+echo '<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Sans CJK SC</family>
+      <family>Noto Sans CJK TC</family>
+      <family>Noto Sans CJK JP</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Sans Mono CJK SC</family>
+      <family>Noto Sans Mono CJK TC</family>
+      <family>Noto Sans Mono CJK JP</family>
+    </prefer>
+  </alias>
+</fontconfig>' | sudo tee /etc/fonts/conf.d/64-language-selector-prefer.conf && fc-cache -fv
+```

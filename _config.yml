@@ -26,6 +26,3 @@ deploy:
   name: star2000
   email: i@star2000.work
   repo: https://CODING_TOKEN@e.coding.net/xing2000/blog/deploy
-
-sitemap:
-  template: ./sitemap_template.xml
