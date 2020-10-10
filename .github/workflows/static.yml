@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          git config --global user.name star2000
+          git config --global user.email i@star2000.work
+          git clone --depth=1 https://${{ secrets.CODING_TOKEN }}@e.coding.net/xing2000/static .
+
           wget -qO aria2-64bit.zip $(wget -qO- api.github.com/repos/aria2/aria2/releases?per_page=1 | jq -r '.[0].assets[].browser_download_url | select(contains("win-64bit"))')
           unzip -p aria2-64bit.zip */aria2c.exe > aria2c-64bit.exe
           rm -f aria2-64bit.zip
@@ -18,9 +22,5 @@ jobs:
           unzip -p aria2-32bit.zip */aria2c.exe > aria2c-32bit.exe
           rm -f aria2-32bit.zip
 
-          git init
-          git add .
-          git config user.name star2000
-          git config user.email i@star2000.work
-          git commit -m '自动同步'
-          git push -f https://${{ secrets.CODING_TOKEN }}@e.coding.net/xing2000/static master:master
+          git commit -am '自动更新' --allow-empty
+          git push
