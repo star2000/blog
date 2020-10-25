@@ -23,5 +23,5 @@ jobs:
           git add -A
           git config user.name ${{ github.actor }}
           git config user.email ${{ github.actor }}@users.noreply.github.com
-          git commit -am '自动更新' --allow-empty
+          git commit -m '自动更新' --allow-empty
           git push
