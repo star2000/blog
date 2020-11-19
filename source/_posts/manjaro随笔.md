@@ -10,38 +10,39 @@ manjaro 随笔
 
 <!--more-->
 
-1. 提权免密(可选, 类似 windows 的 UAC 不弹窗)
+1. 换最近的镜像源
 
-```
-pamac build --no-confirm nopasswd
-```
-2. 换最近的镜像源
-
-```bash
-sudo pacman-mirrors --geoip
+```sh
+sudo pacman-mirrors --geoip && sudo pacman -Sy
 ```
 
-3. 添加 archlinuxcn 源
+2. 添加 archlinuxcn 的清华镜像源
 
-```bash
+```sh
 echo -e '[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' | sudo tee -a /etc/pacman.conf && sudo pacman -Sy --noconfirm archlinuxcn-keyring
 ```
 
-4. 安装中文输入法(需要选中含有`简体中文`可选依赖, 注销或重启后生效)
+3. 自动快照，然后升级系统(当系统发生故障时，运行`sudo timeshift --restore`并删除该软件包，直到问题解决)
 
-```bash
-pamac install manjaro-asian-input-support-fcitx5
+```sh
+pamac build --no-confirm autoupgrade
 ```
 
-5. 自动快照，然后升级系统(当系统发生故障时，运行`sudo timeshift --restore`并删除该软件包，直到问题解决)
+4. 提权免密(可选, 类似 windows 的 UAC 不弹窗)
 
-```bash
-pamac build --no-confirm autoupgrade
+```sh
+pamac build --no-confirm nopasswd
+```
+
+5. 安装中文输入法(需要选中含有`简体中文`可选依赖, 注销或重启后生效)
+
+```sh
+pamac install --no-upgrade manjaro-asian-input-support-fcitx5
 ```
 
 6. 修正配置 Noto Sans CJK 避免中文显示为异体（日文）字形
 
-```bash
+```sh
 echo '<?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -64,4 +65,9 @@ echo '<?xml version="1.0"?>
         </prefer>
     </alias>
 </fontconfig>' | sudo tee /etc/fonts/conf.d/64-language-selector-prefer.conf && fc-cache -fv
+```
+
+7. 更新并重启
+```bash
+pamac update --no-confirm && reboot
 ```
