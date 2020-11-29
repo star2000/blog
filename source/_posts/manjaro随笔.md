@@ -68,6 +68,7 @@ echo '<?xml version="1.0"?>
 ```
 
 7. 更新并重启
-```bash
+
+```sh
 pamac update --no-confirm && reboot
 ```
