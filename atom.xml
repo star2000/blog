@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>星</title>
+  
+  <subtitle>星的博客</subtitle>
+  <link href="https://blog.star2000.work/atom.xml" rel="self"/>
+  
+  <link href="https://blog.star2000.work/"/>
+  <updated>2023-07-23T12:06:51.000Z</updated>
+  <id>https://blog.star2000.work/</id>
+  
+  <author>
+    <name>星</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>manjaro随笔</title>
+    <link href="https://blog.star2000.work/2020/07/24/manjaro%E9%9A%8F%E7%AC%94/"/>
+    <id>https://blog.star2000.work/2020/07/24/manjaro%E9%9A%8F%E7%AC%94/</id>
+    <published>2020-07-24T12:35:00.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>manjaro 随笔</p><span id="more"></span><p>安装时选择<code>btrfs</code>文件系统可瞬间完成快照</p><ol><li>换最近的镜像源</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman-mirrors --geoip &amp;&amp; sudo pacman -Syy</span><br></pre></td></tr></table></figure><ol start="2"><li>添加 archlinuxcn 的清华镜像源</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> -e <span class="string">&#x27;[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch&#x27;</span> | sudo <span class="built_in">tee</span> -a /etc/pacman.conf &amp;&amp; sudo pacman -Sy --noconfirm archlinuxcn-keyring</span><br></pre></td></tr></table></figure><ol start="3"><li>自动快照，然后升级系统(当系统发生故障时，运行<code>sudo timeshift --restore</code>并删除该软件包，直到问题解决)</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pamac build --no-confirm autoupgrade</span><br></pre></td></tr></table></figure><ol start="4"><li>提权免密(可选, 类似 windows 的 UAC 不弹窗)</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pamac build --no-confirm nopasswd</span><br></pre></td></tr></table></figure><ol start="5"><li>安装中文输入法(需要选中含有<code>简体中文</code>可选依赖, 注销或重启后生效)</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pamac install --no-upgrade manjaro-asian-input-support-fcitx5</span><br></pre></td></tr></table></figure><ol start="6"><li>修正配置 Noto Sans CJK 避免中文显示为异体（日文）字形</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;&lt;?xml version=&quot;1.0&quot;?&gt;</span></span><br><span class="line"><span class="string">&lt;!DOCTYPE fontconfig SYSTEM &quot;fonts.dtd&quot;&gt;</span></span><br><span class="line"><span class="string">&lt;fontconfig&gt;</span></span><br><span class="line"><span class="string">    &lt;alias&gt;</span></span><br><span class="line"><span class="string">        &lt;family&gt;sans-serif&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;prefer&gt;</span></span><br><span class="line"><span class="string">            &lt;family&gt;Noto Sans CJK SC&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;/prefer&gt;</span></span><br><span class="line"><span class="string">    &lt;/alias&gt;</span></span><br><span class="line"><span class="string">    &lt;alias&gt;</span></span><br><span class="line"><span class="string">        &lt;family&gt;serif&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;prefer&gt;</span></span><br><span class="line"><span class="string">            &lt;family&gt;Noto Serif CJK SC&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;/prefer&gt;</span></span><br><span class="line"><span class="string">    &lt;/alias&gt;</span></span><br><span class="line"><span class="string">    &lt;alias&gt;</span></span><br><span class="line"><span class="string">        &lt;family&gt;monospace&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;prefer&gt;</span></span><br><span class="line"><span class="string">            &lt;family&gt;Noto Sans Mono CJK SC&lt;/family&gt;</span></span><br><span class="line"><span class="string">        &lt;/prefer&gt;</span></span><br><span class="line"><span class="string">    &lt;/alias&gt;</span></span><br><span class="line"><span class="string">&lt;/fontconfig&gt;&#x27;</span> | sudo <span class="built_in">tee</span> /etc/fonts/conf.d/64-language-selector-prefer.conf &amp;&amp; fc-cache -fv</span><br></pre></td></tr></table></figure><ol start="7"><li>更新并重启</li></ol><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pamac update --no-confirm &amp;&amp; reboot</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;manjaro 随笔&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="https://blog.star2000.work/tags/linux/"/>
+    
+    <category term="manjaro" scheme="https://blog.star2000.work/tags/manjaro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计数</title>
+    <link href="https://blog.star2000.work/2020/03/30/%E8%AE%A1%E6%95%B0/"/>
+    <id>https://blog.star2000.work/2020/03/30/%E8%AE%A1%E6%95%B0/</id>
+    <published>2020-03-30T07:00:00.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>为开发者提供的计数器</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;为开发者提供的计数器&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用scoop管理laragon应用</title>
+    <link href="https://blog.star2000.work/2019/10/15/%E4%BD%BF%E7%94%A8scoop%E7%AE%A1%E7%90%86laragon%E5%BA%94%E7%94%A8/"/>
+    <id>https://blog.star2000.work/2019/10/15/%E4%BD%BF%E7%94%A8scoop%E7%AE%A1%E7%90%86laragon%E5%BA%94%E7%94%A8/</id>
+    <published>2019-10-15T02:16:14.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>laragon</code>是<code>Windows</code>上的高性能本地开发环境。<br><code>scoop</code>是<code>Windows</code>的命令行安装程序。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;laragon&lt;/code&gt;是&lt;code&gt;Windows&lt;/code&gt;上的高性能本地开发环境。&lt;br&gt;&lt;code&gt;scoop&lt;/code&gt;是&lt;code&gt;Windows&lt;/code&gt;的命令行安装程序。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>必应每日壁纸</title>
+    <link href="https://blog.star2000.work/2019/09/03/%E5%BF%85%E5%BA%94%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8/"/>
+    <id>https://blog.star2000.work/2019/09/03/%E5%BF%85%E5%BA%94%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8/</id>
+    <published>2019-09-03T06:40:37.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>Windows</code>每日必应壁纸<br>最低支持 Win7、Win2008</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;code&gt;Windows&lt;/code&gt;每日必应壁纸&lt;br&gt;最低支持 Win7、Win2008&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>aria2终极配置</title>
+    <link href="https://blog.star2000.work/2019/09/03/aria2%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE/"/>
+    <id>https://blog.star2000.work/2019/09/03/aria2%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE/</id>
+    <published>2019-09-03T06:22:58.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装、配置、自启，全自动。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;安装、配置、自启，全自动。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>crontab增删命令</title>
+    <link href="https://blog.star2000.work/2019/08/31/crontab%E5%A2%9E%E5%88%A0%E5%91%BD%E4%BB%A4/"/>
+    <id>https://blog.star2000.work/2019/08/31/crontab%E5%A2%9E%E5%88%A0%E5%91%BD%E4%BB%A4/</id>
+    <published>2019-08-31T12:27:22.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>更简单的在脚本中使用 crontab</p><span id="more"></span><h2 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(crontab -l 2&gt;/dev/null;<span class="built_in">echo</span> <span class="string">&#x27;0 0 * * * reboot&#x27;</span>) | crontab -</span><br></pre></td></tr></table></figure><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -l 2&gt;/dev/null | sed <span class="string">&#x27;/reboot/d&#x27;</span> | crontab -</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;更简单的在脚本中使用 crontab&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="https://blog.star2000.work/tags/linux/"/>
+    
+    <category term="crontab" scheme="https://blog.star2000.work/tags/crontab/"/>
+    
+    <category term="shell" scheme="https://blog.star2000.work/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github Actions部署hexo</title>
+    <link href="https://blog.star2000.work/2019/08/29/Github%20Actions%E9%83%A8%E7%BD%B2hexo/"/>
+    <id>https://blog.star2000.work/2019/08/29/Github%20Actions%E9%83%A8%E7%BD%B2hexo/</id>
+    <published>2019-08-29T01:06:07.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用<a href="https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions">Github Actions</a>自动部署<a href="https://hexo.io/">hexo</a>博客</p><span id="more"></span><h2 id="创建令牌"><a href="#创建令牌" class="headerlink" title="创建令牌"></a>创建令牌</h2><p><img data-src="/%E5%88%9B%E5%BB%BA%E4%BB%A4%E7%89%8C.png" alt="创建令牌"></p><h2 id="设置令牌"><a href="#设置令牌" class="headerlink" title="设置令牌"></a>设置令牌</h2><p><code>CODING_TOKEN</code>的格式是<code>令牌用户名:令牌</code></p><p><img data-src="/%E8%AE%BE%E7%BD%AE%E4%BB%A4%E7%89%8C.png" alt="设置令牌"></p><h2 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改<code>_config.yml</code></h2><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">star2000</span></span><br><span class="line">  <span class="attr">email:</span> <span class="string">i@star2000.work</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://CODING_TOKEN@e.coding.net/xing2000/blog/deploy</span></span><br></pre></td></tr></table></figure><h2 id="创建-github-workflows-deploy-yml"><a href="#创建-github-workflows-deploy-yml" class="headerlink" title="创建.github/workflows/deploy.yml"></a>创建<code>.github/workflows/deploy.yml</code></h2><figure class="highlight yml"><figcaption><span>.github/workflows/deploy.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">on:</span> <span class="string">push</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@master</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">fetch-depth:</span> <span class="number">0</span></span><br><span class="line">          <span class="attr">submodules:</span> <span class="literal">true</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">恢复上次修改时间</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">git</span> <span class="string">ls-files</span> <span class="string">-z</span> <span class="string">|</span> <span class="string">while</span> <span class="string">read</span> <span class="string">-d</span> <span class="string">&#x27;&#x27;</span> <span class="string">path;</span> <span class="string">do</span> <span class="string">touch</span> <span class="string">-d</span> <span class="string">&quot;$(git log -1 --format=&quot;</span><span class="string">@%ct&quot;</span> <span class="string">&quot;$path&quot;</span><span class="string">)&quot;</span> <span class="string">&quot;$path&quot;</span><span class="string">;</span> <span class="string">done</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/setup-node@master</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&quot;*&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">部署</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          sed -i &quot;s|CODING_TOKEN|$&#123;&#123; secrets.CODING_TOKEN &#125;&#125;|&quot; _config.yml</span></span><br><span class="line"><span class="string">          npm i --production</span></span><br><span class="line"><span class="string">          npm run deploy</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;使用&lt;a href=&quot;https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions&quot;&gt;Github Actions&lt;/a&gt;自动部署&lt;a href=&quot;https://hexo.io/&quot;&gt;hexo&lt;/a&gt;博客&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://blog.star2000.work/tags/hexo/"/>
+    
+    <category term="自动部署" scheme="https://blog.star2000.work/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>运行在线脚本</title>
+    <link href="https://blog.star2000.work/2019/06/15/%E8%BF%90%E8%A1%8C%E5%9C%A8%E7%BA%BF%E8%84%9A%E6%9C%AC/"/>
+    <id>https://blog.star2000.work/2019/06/15/%E8%BF%90%E8%A1%8C%E5%9C%A8%E7%BA%BF%E8%84%9A%E6%9C%AC/</id>
+    <published>2019-06-15T11:31:58.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>有时，我们想运行一个在线脚本，又不想下载它</p><span id="more"></span><div class="tabs" id="tabs"><ul class="nav-tabs"><li class="tab active"><a href="#tabs-1">Windows</a></li><li class="tab"><a href="#tabs-2">Linux</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tabs-1"><p>使用 PowerShell 执行<br>如果脚本里包含非 ASCII 字符，比如汉字，先修改管道字符集</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$OutputEncoding</span>=[<span class="type">Text.Encoding</span>]::UTF8</span><br></pre></td></tr></table></figure><p>再执行</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="built_in">iwr</span> <span class="literal">-useb</span> <span class="variable">$url</span>).content | py</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tabs-2"><div class="tabs" id="linux"><ul class="nav-tabs"><li class="tab active"><a href="#linux-1">wget</a></li><li class="tab"><a href="#linux-2">curl</a></li></ul><div class="tab-content"><div class="tab-pane active" id="linux-1"><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- <span class="variable">$url</span> | python3</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="linux-2"><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sL <span class="variable">$url</span> | python3</span><br></pre></td></tr></table></figure></div></div></div></div></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;有时，我们想运行一个在线脚本，又不想下载它&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="shell" scheme="https://blog.star2000.work/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo压缩优化</title>
+    <link href="https://blog.star2000.work/2019/05/30/hexo%E5%8E%8B%E7%BC%A9%E4%BC%98%E5%8C%96/"/>
+    <id>https://blog.star2000.work/2019/05/30/hexo%E5%8E%8B%E7%BC%A9%E4%BC%98%E5%8C%96/</id>
+    <published>2019-05-30T00:14:08.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用 hexo-neat 压缩 html,css 和 js 文件</p><span id="more"></span><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-neat</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>添加以下代码到<code>_config.yml</code></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">neat_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">neat_html:</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/*.md&quot;</span></span><br><span class="line"><span class="attr">neat_css:</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/*.min.css&quot;</span></span><br><span class="line"><span class="attr">neat_js:</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/*.min.js&quot;</span></span><br></pre></td></tr></table></figure><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>使用<code>hexo g</code>，查看输出，如有 js 压缩错误<br>参考以下配置跳过它们</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">neat_js:</span></span><br><span class="line">  <span class="attr">exclude:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/*.min.js&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/local-search.js&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/utils.js&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/next-boot.js&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;**/pisces.js&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;使用 hexo-neat 压缩 html,css 和 js 文件&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://blog.star2000.work/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode设置中文php文档</title>
+    <link href="https://blog.star2000.work/2019/05/27/vscode%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87php%E6%96%87%E6%A1%A3/"/>
+    <id>https://blog.star2000.work/2019/05/27/vscode%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87php%E6%96%87%E6%A1%A3/</id>
+    <published>2019-05-27T06:52:09.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>PHP Intelephense 中文帮助</p><span id="more"></span><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/fw6669998/php-doc/raw/master/document/out.zip">汉化包地址</a></p><p>下载后解压缩，得到一个<code>out</code>文件夹，下面有许多子文件夹</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>打开<code>PowerShell</code>，输入下面的命令，接着按下<code>tab</code>键补全，然后<code>enter</code>回车打开文件浏览器</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">explorer ~\.vscode\extensions\bmewburn.vscode<span class="literal">-intelephense-client-</span>*\node_modules\intelephense\lib</span><br></pre></td></tr></table></figure><p>将此目录下原先的<code>stub</code>文件夹备份或删除<br>将<code>out</code>文件夹复制到此处，并重命名为<code>stub</code></p><p>汉化项目地址: <a href="https://github.com/fw6669998/php-doc">https://github.com/fw6669998/php-doc</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;PHP Intelephense 中文帮助&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="vscode" scheme="https://blog.star2000.work/tags/vscode/"/>
+    
+    <category term="php" scheme="https://blog.star2000.work/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改PowerShell管道的字符集</title>
+    <link href="https://blog.star2000.work/2019/05/12/%E4%BF%AE%E6%94%B9PowerShell%E7%AE%A1%E9%81%93%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86/"/>
+    <id>https://blog.star2000.work/2019/05/12/%E4%BF%AE%E6%94%B9PowerShell%E7%AE%A1%E9%81%93%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86/</id>
+    <published>2019-05-12T01:39:27.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当我使用 PowerShell 运行<code>&#39;print(&quot;你好&quot;)&#39; | py</code>时，输出两个问号</p><span id="more"></span><p>之所以这样，是因为 PowerShell 中的管道默认字符集是 ASCII<br>使用如下命令来临时更改管道的输出字符集</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$OutputEncoding</span>=[<span class="type">Text.Encoding</span>]::UTF8</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;当我使用 PowerShell 运行&lt;code&gt;&amp;#39;print(&amp;quot;你好&amp;quot;)&amp;#39; | py&lt;/code&gt;时，输出两个问号&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="shell" scheme="https://blog.star2000.work/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代理git协议</title>
+    <link href="https://blog.star2000.work/2019/04/25/%E4%BB%A3%E7%90%86git%E5%8D%8F%E8%AE%AE/"/>
+    <id>https://blog.star2000.work/2019/04/25/%E4%BB%A3%E7%90%86git%E5%8D%8F%E8%AE%AE/</id>
+    <published>2019-04-25T01:18:00.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>代理 git 协议，免询问密码</p><span id="more"></span><div class="tabs" id="tabs"><ul class="nav-tabs"><li class="tab active"><a href="#tabs-1">Windows</a></li><li class="tab"><a href="#tabs-2">Linux</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tabs-1"><p>编辑<code>~/.ssh/config</code>文件，添加如下配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tabs-2"><p>安装<code>netcat</code></p><div class="tabs" id="netcat"><ul class="nav-tabs"><li class="tab active"><a href="#netcat-1">apt</a></li><li class="tab"><a href="#netcat-2">yum</a></li><li class="tab"><a href="#netcat-3">pacman</a></li></ul><div class="tab-content"><div class="tab-pane active" id="netcat-1"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y netcat-openbsd</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="netcat-2"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y netcat-openbsd</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="netcat-3"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Sy --noconfirm openbsd-netcat</span><br></pre></td></tr></table></figure></div></div></div><p>编辑<code>~/.ssh/config</code>文件，添加如下配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">   ProxyCommand nc -x 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure></div></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;代理 git 协议，免询问密码&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="git" scheme="https://blog.star2000.work/tags/git/"/>
+    
+    <category term="代理" scheme="https://blog.star2000.work/tags/%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>debian启动卡顿</title>
+    <link href="https://blog.star2000.work/2019/04/15/debian%E5%90%AF%E5%8A%A8%E5%8D%A1%E9%A1%BF/"/>
+    <id>https://blog.star2000.work/2019/04/15/debian%E5%90%AF%E5%8A%A8%E5%8D%A1%E9%A1%BF/</id>
+    <published>2019-04-15T02:38:00.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>debian 开机卡顿了将近两分钟时间</p><span id="more"></span><p>在查看<code>dmesg</code>信息后发现，开机时卡在了<code>crng</code>收集熵，使用以下命令解决</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install -y haveged</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;debian 开机卡顿了将近两分钟时间&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="https://blog.star2000.work/tags/linux/"/>
+    
+    <category term="debian" scheme="https://blog.star2000.work/tags/debian/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux提权免密</title>
+    <link href="https://blog.star2000.work/2019/03/21/linux%E6%8F%90%E6%9D%83%E5%85%8D%E5%AF%86/"/>
+    <id>https://blog.star2000.work/2019/03/21/linux%E6%8F%90%E6%9D%83%E5%85%8D%E5%AF%86/</id>
+    <published>2019-03-21T07:30:44.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>sudo，kdesu，Polkit 的单行提权命令</p><span id="more"></span><p><code>wheel</code>组提权免密</p><p><code>arch</code>系可以安装<code>aur</code>中我写的<code>nopasswd</code>包</p><ul><li>sudo</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;%wheel ALL=(ALL) NOPASSWD: ALL&#x27;</span> | sudo <span class="built_in">tee</span> -a /etc/sudoers</span><br></pre></td></tr></table></figure><ul><li>kdesu</li></ul><p>Octopi 免弹窗, 依赖<code>sudo</code>免密</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kwriteconfig5 --file kdesurc --group super-user-command --key super-user-command sudo</span><br></pre></td></tr></table></figure><ul><li>Polkit</li></ul><p>系统设置免弹窗</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;polkit.addRule(function(action, subject) &#123;if (subject.isInGroup(&quot;wheel&quot;)) &#123;return polkit.Result.YES;&#125;&#125;);&#x27;</span> | sudo <span class="built_in">tee</span> /etc/polkit-1/rules.d/49-nopasswd_global.rules</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;sudo，kdesu，Polkit 的单行提权命令&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="https://blog.star2000.work/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10卸载预装应用</title>
+    <link href="https://blog.star2000.work/2019/02/18/Win10%E5%8D%B8%E8%BD%BD%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8/"/>
+    <id>https://blog.star2000.work/2019/02/18/Win10%E5%8D%B8%E8%BD%BD%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8/</id>
+    <published>2019-02-18T12:09:20.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>通常刚安装的 Win10 都自带了一些无用的商店应用，<br>而且有些还没有卸载按钮，<br>想卸载又不想一个个点，这里有方便的卸载命令。</p><span id="more"></span><p>按<code>Win+R</code>执行以下命令</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell <span class="built_in">Get-AppPackage</span>|?&#123; <span class="variable">$_</span>.Name <span class="operator">-ne</span> <span class="string">&#x27;Microsoft.WindowsStore&#x27;</span>&#125;|<span class="built_in">Remove-AppPackage</span> <span class="literal">-ea</span> Ignore</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;通常刚安装的 Win10 都自带了一些无用的商店应用，&lt;br&gt;而且有些还没有卸载按钮，&lt;br&gt;想卸载又不想一个个点，这里有方便的卸载命令。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="windows" scheme="https://blog.star2000.work/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript实现range函数</title>
+    <link href="https://blog.star2000.work/2018/06/08/JavaScript%E5%AE%9E%E7%8E%B0range%E5%87%BD%E6%95%B0/"/>
+    <id>https://blog.star2000.work/2018/06/08/JavaScript%E5%AE%9E%E7%8E%B0range%E5%87%BD%E6%95%B0/</id>
+    <published>2018-06-08T13:47:01.000Z</published>
+    <updated>2023-07-23T12:06:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>会生成一个可迭代对象，就像 Python 中的那样</p><span id="more"></span><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 生成迭代器</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">Number</span>&#125; start 开始值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">Number</span>&#125; end 结束值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">Number</span>&#125; [step=1] 步长</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> &#123;<span class="type">Generator</span>&#125; 迭代器</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span>* <span class="title function_">range</span>(<span class="params">start, end, step = <span class="number">1</span></span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">undefined</span> === end) &#123;</span><br><span class="line">    [end, start] = [start, <span class="number">0</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (start &lt; end) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">of</span> <span class="title class_">Array</span>(<span class="title class_">Math</span>.<span class="title function_">ceil</span>((end - start) / step)).<span class="title function_">keys</span>()) &#123;</span><br><span class="line">      <span class="keyword">yield</span> i * step + start;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> [];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>此函数在 JavaScript 中实现了 python 中的 range 函数，<br>想要使用 python 中的 for…in 结构可以这样做：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">of</span> <span class="title function_">range</span>(<span class="number">10</span>)) &#123;</span><br><span class="line">  <span class="comment">// code</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>想要返回输出数组可以这样做：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[...<span class="title function_">range</span>(<span class="number">10</span>)];</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;会生成一个可迭代对象，就像 Python 中的那样&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="javascript" scheme="https://blog.star2000.work/tags/javascript/"/>
+    
+  </entry>
+  
+</feed>
