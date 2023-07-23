@@ -19,7 +19,7 @@ jobs:
         run: git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
       - uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: lts/*
       - run: yarn install
       - run: yarn run build
       - uses: peaceiris/actions-gh-pages@v3
