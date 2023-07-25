@@ -703,7 +703,7 @@ gitalk:
   github_id: star2000 # GitHub repo owner
   repo: blog # Repository name to store issues
   client_id: 2b41000a88bc8e7c39c5 # GitHub Application Client ID
-  client_secret: 4ce7390bad4033ed47ba00ac58635d158fab8f39 # GitHub Application Client Secret
+  client_secret: $GITALK_CLIENT_SECRET # GitHub Application Client Secret
   admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
     - star2000
   distraction_free_mode: true # Facebook-like distraction free mode
