@@ -2714,23 +2714,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gitalk@patch:gitalk@npm%3A1.8.0#./.yarn/patches/gitalk-npm-1.8.0-af318e459c.patch::locator=hexo-site%40workspace%3A.":
-  version: 1.8.0
-  resolution: "gitalk@patch:gitalk@npm%3A1.8.0#./.yarn/patches/gitalk-npm-1.8.0-af318e459c.patch::version=1.8.0&hash=6a91c7&locator=hexo-site%40workspace%3A."
-  dependencies:
-    autosize: 3.0.21
-    axios: 0.19.2
-    date-fns: 2.16.1
-    es6-promise: 4.1.1
-    github-markdown-css: 2.8.0
-    node-polyglot: 2.2.2
-    preact: 8.1.0
-    preact-compat: 3.16.0
-    react-flip-move: 2.9.14
-  checksum: 6cf69d20a8cf4886eac384b60eb61226dd3672e5ee79fc880cb20e2cac97b7b27cf7bd4f76463c00fdf5cc02c4ba90c2d0cb1af5d747ce3489202c5b169e6a23
-  languageName: node
-  linkType: hard
-
 "github-markdown-css@npm:2.8.0":
   version: 2.8.0
   resolution: "github-markdown-css@npm:2.8.0"
@@ -3064,17 +3047,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:8.17.1":
+"hexo-theme-next@npm:^8.17.1":
   version: 8.17.1
   resolution: "hexo-theme-next@npm:8.17.1"
   checksum: fd849b9d89cf5fefc289285741a2000d209726d651918fd8b97602ab247b78a8253dc0ffbac0cb4ca5b7a9866e78032fa44f2e8f91f6af61492f4e2682b72794
-  languageName: node
-  linkType: hard
-
-"hexo-theme-next@patch:hexo-theme-next@npm%3A8.17.1#./.yarn/patches/hexo-theme-next-npm-8.17.1-0cebf18f1d.patch::locator=hexo-site%40workspace%3A.":
-  version: 8.17.1
-  resolution: "hexo-theme-next@patch:hexo-theme-next@npm%3A8.17.1#./.yarn/patches/hexo-theme-next-npm-8.17.1-0cebf18f1d.patch::version=8.17.1&hash=3ba5ca&locator=hexo-site%40workspace%3A."
-  checksum: cc00d65571433de47c3730f3f18ef14b4782bd4861c5635670d1282d7e6735bc654c1cf3f11c80a87af7a8057dfd9c2fc700669788f4966b7a441ead1d7bf110
   languageName: node
   linkType: hard
 

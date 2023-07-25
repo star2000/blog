@@ -705,8 +705,7 @@ gitalk:
   repo: blog # Repository name to store issues
   client_id: 2b41000a88bc8e7c39c5 # GitHub Application Client ID
   client_secret: e210539af2c20169506733a35cb75a9d9522109a # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
-    - star2000
+  admin_user: star2000 # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
