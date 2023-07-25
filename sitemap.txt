@@ -1,3 +1,4 @@
+https://blog.star2000.work/msg/
 https://blog.star2000.work/2019/08/29/Github%20Actions%E9%83%A8%E7%BD%B2hexo/
 https://blog.star2000.work/2018/06/08/JavaScript%E5%AE%9E%E7%8E%B0range%E5%87%BD%E6%95%B0/
 https://blog.star2000.work/2019/02/18/Win10%E5%8D%B8%E8%BD%BD%E9%A2%84%E8%A3%85%E5%BA%94%E7%94%A8/

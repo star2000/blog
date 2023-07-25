@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.star2000.work/msg/</loc>
+    
+    <lastmod>2023-07-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.star2000.work/2019/08/29/Github%20Actions%E9%83%A8%E7%BD%B2hexo/</loc>
     
     <lastmod>2023-07-25</lastmod>
