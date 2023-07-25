@@ -27,6 +27,7 @@
   },
   "packageManager": "yarn@3.6.1",
   "resolutions": {
-    "gitalk@1.8.0": "patch:gitalk@npm%3A1.8.0#./.yarn/patches/gitalk-npm-1.8.0-af318e459c.patch"
+    "gitalk@1.8.0": "patch:gitalk@npm%3A1.8.0#./.yarn/patches/gitalk-npm-1.8.0-af318e459c.patch",
+    "hexo-theme-next@^8.17.1": "patch:hexo-theme-next@npm%3A8.17.1#./.yarn/patches/hexo-theme-next-npm-8.17.1-0cebf18f1d.patch"
   }
 }

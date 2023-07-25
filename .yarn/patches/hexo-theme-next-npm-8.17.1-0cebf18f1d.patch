@@ -1,0 +1,13 @@
+diff --git a/_vendors.yml b/_vendors.yml
+index f7e4295b7e4961bfe7757a57aaf26075975ce7ce..0fed8c2f7872e7462a9a5ab4f0b963d5f6052cd0 100644
+--- a/_vendors.yml
++++ b/_vendors.yml
+@@ -105,7 +105,7 @@ gitalk_js:
+   name: gitalk
+   version: 1.8.0
+   file: dist/gitalk.min.js
+-  integrity: sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4=
++  integrity: sha256-6imkfk+p77ftrLRCZmXVzuAcwHvpdQEw7nP9IIqCE5A=
+ gitalk_css:
+   name: gitalk
+   version: 1.8.0
