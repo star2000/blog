@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.star2000.work/2019/08/29/Github%20Actions%E9%83%A8%E7%BD%B2hexo/</loc>
     
-    <lastmod>2023-07-23</lastmod>
+    <lastmod>2023-07-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -56,15 +56,6 @@
   </url>
   
   <url>
-    <loc>https://blog.star2000.work/2019/05/30/hexo%E5%8E%8B%E7%BC%A9%E4%BC%98%E5%8C%96/</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.star2000.work/2019/03/21/linux%E6%8F%90%E6%9D%83%E5%85%8D%E5%AF%86/</loc>
     
     <lastmod>2023-07-23</lastmod>
@@ -75,15 +66,6 @@
   
   <url>
     <loc>https://blog.star2000.work/2020/07/24/manjaro%E9%9A%8F%E7%AC%94/</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.star2000.work/2019/05/27/vscode%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87php%E6%96%87%E6%A1%A3/</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -157,7 +139,7 @@
 
   <url>
     <loc>https://blog.star2000.work/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -165,91 +147,77 @@
   
   <url>
     <loc>https://blog.star2000.work/tags/hexo/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/javascript/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/windows/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/linux/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/crontab/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/shell/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/debian/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/manjaro/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.star2000.work/tags/vscode/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.star2000.work/tags/php/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/git/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.star2000.work/tags/%E4%BB%A3%E7%90%86/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
