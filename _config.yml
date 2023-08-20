@@ -103,3 +103,19 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+# https://github.com/next-theme/hexo-next-giscus
+# https://giscus.app/zh-CN
+giscus:
+  enable: true
+  repo: star2000/blog
+  repo_id: R_kgDOJ-wFqg
+  category: Announcements
+  category_id: DIC_kwDOJ-wFqs4CYuXf
+  mapping: pathname
+  reactions_enabled: 1
+  emit_metadata: 0
+  theme: dark
+  lang: zh-CN
+  input_position: bottom
+  loading: lazy
