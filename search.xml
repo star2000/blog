@@ -52,20 +52,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>debian启动卡顿</title>
-    <url>/2019/04/15/debian%E5%90%AF%E5%8A%A8%E5%8D%A1%E9%A1%BF/</url>
-    <content><![CDATA[<p>debian 开机卡顿了将近两分钟时间</p>
-<span id="more"></span>
-
-<p>在查看<code>dmesg</code>信息后发现，开机时卡在了<code>crng</code>收集熵，使用以下命令解决</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt install -y haveged</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-        <tag>debian</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>crontab增删命令</title>
     <url>/2019/08/31/crontab%E5%A2%9E%E5%88%A0%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>更简单的在脚本中使用 crontab</p>
@@ -79,6 +65,20 @@
         <tag>linux</tag>
         <tag>crontab</tag>
         <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>debian启动卡顿</title>
+    <url>/2019/04/15/debian%E5%90%AF%E5%8A%A8%E5%8D%A1%E9%A1%BF/</url>
+    <content><![CDATA[<p>debian 开机卡顿了将近两分钟时间</p>
+<span id="more"></span>
+
+<p>在查看<code>dmesg</code>信息后发现，开机时卡在了<code>crng</code>收集熵，使用以下命令解决</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt install -y haveged</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>debian</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +182,19 @@
 ]]></content>
   </entry>
   <entry>
+    <title>修改PowerShell管道的字符集</title>
+    <url>/2019/05/12/%E4%BF%AE%E6%94%B9PowerShell%E7%AE%A1%E9%81%93%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
+    <content><![CDATA[<p>当我使用 PowerShell 运行<code>&#39;print(&quot;你好&quot;)&#39; | py</code>时，输出两个问号</p>
+<span id="more"></span>
+
+<p>之所以这样，是因为 PowerShell 中的管道默认字符集是 ASCII<br>使用如下命令来临时更改管道的输出字符集</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$OutputEncoding</span>=[<span class="type">Text.Encoding</span>]::UTF8</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>必应每日壁纸</title>
     <url>/2019/09/03/%E5%BF%85%E5%BA%94%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8/</url>
     <content><![CDATA[<p><code>Windows</code>每日必应壁纸<br>最低支持 Win7、Win2008</p>
@@ -204,19 +217,6 @@
 
 <p>再执行</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">(<span class="built_in">iwr</span> <span class="literal">-useb</span> <span class="variable">$url</span>).content | py</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tabs-2"><div class="tabs" id="linux"><ul class="nav-tabs"><li class="tab active"><a href="#linux-1">wget</a></li><li class="tab"><a href="#linux-2">curl</a></li></ul><div class="tab-content"><div class="tab-pane active" id="linux-1"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- <span class="variable">$url</span> | python3</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="linux-2"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL <span class="variable">$url</span> | python3</span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
-]]></content>
-      <tags>
-        <tag>shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改PowerShell管道的字符集</title>
-    <url>/2019/05/12/%E4%BF%AE%E6%94%B9PowerShell%E7%AE%A1%E9%81%93%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
-    <content><![CDATA[<p>当我使用 PowerShell 运行<code>&#39;print(&quot;你好&quot;)&#39; | py</code>时，输出两个问号</p>
-<span id="more"></span>
-
-<p>之所以这样，是因为 PowerShell 中的管道默认字符集是 ASCII<br>使用如下命令来临时更改管道的输出字符集</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="variable">$OutputEncoding</span>=[<span class="type">Text.Encoding</span>]::UTF8</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>shell</tag>
