@@ -110,8 +110,8 @@ giscus:
   enable: true
   repo: star2000/blog
   repo_id: R_kgDOJ-wFqg
-  category: Announcements
-  category_id: DIC_kwDOJ-wFqs4CYuXf
+  category: General
+  category_id: DIC_kwDOJ-wFqs4CYuXg
   mapping: pathname
   reactions_enabled: 1
   emit_metadata: 0
