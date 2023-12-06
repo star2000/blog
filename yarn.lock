@@ -768,9 +768,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next-theme/plugins@npm:^8.19.0":
-  version: 8.19.0
-  resolution: "@next-theme/plugins@npm:8.19.0"
+"@next-theme/plugins@npm:^8.19.1":
+  version: 8.19.1
+  resolution: "@next-theme/plugins@npm:8.19.1"
   dependencies:
     "@creativecommons/vocabulary": 2020.11.3
     "@fancyapps/ui": 5.0.28
@@ -778,7 +778,7 @@ __metadata:
     "@next-theme/pjax": 0.6.0
     algoliasearch: 4.20.0
     animate.css: 3.1.1
-    animejs: 3.2.2
+    animejs: 3.2.1
     disqusjs: 3.0.2
     firebase: 10.7.0
     gitalk: 1.8.0
@@ -797,7 +797,7 @@ __metadata:
     quicklink: 2.3.0
     ribbon.js: 1.0.2
     wavedrom: 3.3.0
-  checksum: 24cec0e6cefed424a725fd3ae7adb55f75d61aea7d12bfba3a9fb73feef0edc42633cd4e9a432372982e11688068d0bd785ab71da89aeeb5e6d8f305bce9b96f
+  checksum: c1341f52d122bfce560992b2bd67ee296d35eb48f76d98246c53c1942ec7034ed50a2383701e7532befc08f6b5a6b0c40236cf6dd12083f27fc77de33828c089
   languageName: node
   linkType: hard
 
@@ -1131,10 +1131,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"animejs@npm:3.2.2":
-  version: 3.2.2
-  resolution: "animejs@npm:3.2.2"
-  checksum: 0ada37b8d432910d6fa983903dd5db0a9548bd62169de4302315b828a55ada82ae73e2ede119351e5f117af0c2376eee00c55d961b559a641faf72abcab03255
+"animejs@npm:3.2.1":
+  version: 3.2.1
+  resolution: "animejs@npm:3.2.1"
+  checksum: 6939171bed17d6b28307747e564d33e93312c26169b98498c833117d86f174ce7a318469bfd81716c223860a6d13bd76b761e79e765b86b2a2f851963caaa851
   languageName: node
   linkType: hard
 
@@ -3055,7 +3055,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hexo-site@workspace:."
   dependencies:
-    "@next-theme/plugins": ^8.19.0
+    "@next-theme/plugins": ^8.19.1
     hexo: ^7.0.0
     hexo-generator-archive: ^2.0.0
     hexo-generator-feed: ^3.0.0
