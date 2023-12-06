@@ -3067,14 +3067,14 @@ __metadata:
     hexo-renderer-marked: ^6.2.0
     hexo-renderer-stylus: ^3.0.0
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.19.0
+    hexo-theme-next: ^8.19.1
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.19.0":
-  version: 8.19.0
-  resolution: "hexo-theme-next@npm:8.19.0"
-  checksum: 012816ca997c4634d1fdadb1d02630a07f70cd846dbff749c4bf0427b404deffff7b68d4a1d6348f6599271ece532f64aed0cd132bfe4ef13f1a8434ada0912e
+"hexo-theme-next@npm:^8.19.1":
+  version: 8.19.1
+  resolution: "hexo-theme-next@npm:8.19.1"
+  checksum: b4c8c8f9ff7aa23ea25e114ecaac845e12c79c8da914cc0d595c4cf608c5540ebc7dbf878fb1a3e889c5f2bcad1ab600f4896fc20c0f86feaa1c5d1ea5a4416b
   languageName: node
   linkType: hard
 
