@@ -3053,14 +3053,14 @@ __metadata:
     hexo-renderer-marked: ^6.3.0
     hexo-renderer-stylus: ^3.0.1
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.19.2
+    hexo-theme-next: ^8.20.0
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.19.2":
-  version: 8.19.2
-  resolution: "hexo-theme-next@npm:8.19.2"
-  checksum: c7f5e01076c09e9ce99fd227da3831f69cf8151cb16dc2fc3a6641fb93223aa90f2735c26ef2241cca73b1459c119317b4aca6654fa37aaf5757eb74736edda9
+"hexo-theme-next@npm:^8.20.0":
+  version: 8.20.0
+  resolution: "hexo-theme-next@npm:8.20.0"
+  checksum: 2822f6a873c57802e5487aa2eb700213e4a5ec119173560e01b174040c5c327133f4635bca9e2ffaaedae67d3c99faf28b0229dd38db21319db87dcec8e59620
   languageName: node
   linkType: hard
 
