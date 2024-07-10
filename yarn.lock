@@ -2927,12 +2927,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-generator-index@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "hexo-generator-index@npm:3.0.0"
+"hexo-generator-index@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-generator-index@npm:4.0.0"
   dependencies:
     hexo-pagination: 3.0.0
-  checksum: fcfbeb09022cdf7a608825604f098f01c75682125f9b875a776f3b89f9743522c58fab071c6a75c4185a6cd61896eead5058e600a0898de3a01781883fa1741f
+  checksum: 2caa7894268748c9d14d0ec032627b14053325f80d9af2e6f67130c6b874660ca29c4ee9f7b527109f97322a16c65ed643d31633c0f0e2f801ef2eb17ed52453
   languageName: node
   linkType: hard
 
@@ -3045,7 +3045,7 @@ __metadata:
     hexo: ^7.3.0
     hexo-generator-archive: ^2.0.0
     hexo-generator-feed: ^3.0.0
-    hexo-generator-index: ^3.0.0
+    hexo-generator-index: ^4.0.0
     hexo-generator-searchdb: ^1.4.1
     hexo-generator-sitemap: ^3.0.1
     hexo-generator-tag: ^2.0.0
