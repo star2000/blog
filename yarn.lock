@@ -3007,14 +3007,14 @@ __metadata:
     hexo-renderer-marked: ^6.3.0
     hexo-renderer-stylus: ^3.0.1
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.20.0
+    hexo-theme-next: ^8.21.0
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.20.0":
-  version: 8.20.0
-  resolution: "hexo-theme-next@npm:8.20.0"
-  checksum: 2822f6a873c57802e5487aa2eb700213e4a5ec119173560e01b174040c5c327133f4635bca9e2ffaaedae67d3c99faf28b0229dd38db21319db87dcec8e59620
+"hexo-theme-next@npm:^8.21.0":
+  version: 8.21.0
+  resolution: "hexo-theme-next@npm:8.21.0"
+  checksum: c197f91f0804cc9b06bfa043074db5c2965632915961bb569afd8e5471126549f26d036cd46cac84818781e588914eb0f7a27f0018f86121d7eb402a9e3dc26e
   languageName: node
   linkType: hard
 
