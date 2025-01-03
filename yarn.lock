@@ -3335,14 +3335,14 @@ __metadata:
     hexo-renderer-marked: ^7.0.0
     hexo-renderer-stylus: ^3.0.1
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.21.1
+    hexo-theme-next: ^8.22.0
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.21.1":
-  version: 8.21.1
-  resolution: "hexo-theme-next@npm:8.21.1"
-  checksum: ef03475c483d2e85c615a6bd5795e0544415fc6b89def57d08293dcc9d7822563384a3930a0ff5e60d5bbaa5528abac058945e2ae1f2a414ceea856e1007f5be
+"hexo-theme-next@npm:^8.22.0":
+  version: 8.22.0
+  resolution: "hexo-theme-next@npm:8.22.0"
+  checksum: 0e15bdb7b55ae37619b345a72b367247dc62dc57a4c572b400f6fa322ee0aa37dd19edb44123db5e5a5a12f9058c08ae86e561ac1a29662bfcafeca55f73c126
   languageName: node
   linkType: hard
 
