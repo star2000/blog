@@ -3370,14 +3370,14 @@ __metadata:
     hexo-renderer-marked: ^7.0.1
     hexo-renderer-stylus: ^3.0.1
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.24.0
+    hexo-theme-next: ^8.24.1
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.24.0":
-  version: 8.24.0
-  resolution: "hexo-theme-next@npm:8.24.0"
-  checksum: a562185cba225e3ce0841ada78cb3fd7e87a5e52d5ee3ddc3b30f9ff0a60664df10ff8949fb93f1181e61ac2d579c98e187c89bfdeba4cabab863f5624960521
+"hexo-theme-next@npm:^8.24.1":
+  version: 8.24.1
+  resolution: "hexo-theme-next@npm:8.24.1"
+  checksum: c2b31633a7449bd22ec0f1743ee4e36b52ed57130a792f851c4a0dd1df6182a448e2a1c5561419ea61789a59ce299dff168adbb4be462af917d51fc3ac4e3fc4
   languageName: node
   linkType: hard
 
