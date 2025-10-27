@@ -1467,13 +1467,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"archy@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "archy@npm:1.0.0"
-  checksum: 504ae7af655130bab9f471343cfdb054feaec7d8e300e13348bc9fe9e660f83d422e473069584f73233c701ae37d1c8452ff2522f2a20c38849e0f406f1732ac
-  languageName: node
-  linkType: hard
-
 "are-we-there-yet@npm:^3.0.0":
   version: 3.0.1
   resolution: "are-we-there-yet@npm:3.0.1"
@@ -2561,6 +2554,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domutils@npm:^3.2.1":
+  version: 3.2.2
+  resolution: "domutils@npm:3.2.2"
+  dependencies:
+    dom-serializer: ^2.0.0
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.3
+  checksum: ae941d56f03d857077d55dde9297e960a625229fc2b933187cc4123084d7c2d2517f58283a7336567127029f1e008449bac8ac8506d44341e29e3bb18e02f906
+  languageName: node
+  linkType: hard
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -2623,6 +2627,13 @@ __metadata:
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: 853f8ebd5b425d350bffa97dd6958143179a5938352ccae092c62d1267c4e392a039be1bae7d51b6e4ffad25f51f9617531fedf5237f15df302ccfb452cbf2d7
+  languageName: node
+  linkType: hard
+
+"entities@npm:^6.0.0":
+  version: 6.0.1
+  resolution: "entities@npm:6.0.1"
+  checksum: 937b952e81aca641660a6a07f70001c6821973dea3ae7f6a5013eadce94620f3ed2e9c745832d503c8811ce6e97704d8a0396159580c0e567d815234de7fdecf
   languageName: node
   linkType: hard
 
@@ -2765,6 +2776,13 @@ __metadata:
   version: 1.0.4
   resolution: "exsolve@npm:1.0.4"
   checksum: 57eabd784003df951bc43db92ef1b8c4d329a57c8649df2fa863c2bc22a40dc8e8231338a08d1bc382218b261457d553c622fbc6bf01133a391169ec29b98446
+  languageName: node
+  linkType: hard
+
+"fast-archy@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "fast-archy@npm:1.0.0"
+  checksum: 125c613427c2a1a43146c3f840078ee7f272743805935188226173ac4384c0b54b0bcddff3ec2d7e48c4b52e5d949ab8d4034c0834e57213b0dd9f11fff5b9d4
   languageName: node
   linkType: hard
 
@@ -3415,7 +3433,7 @@ __metadata:
   resolution: "hexo-site@workspace:."
   dependencies:
     "@next-theme/plugins": ^8.25.0
-    hexo: ^8.0.0
+    hexo: ^8.1.0
     hexo-generator-archive: ^2.0.0
     hexo-generator-feed: ^3.0.0
     hexo-generator-index: ^4.0.0
@@ -3499,20 +3517,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "hexo@npm:8.0.0"
+"hexo-util@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-util@npm:4.0.0"
+  dependencies:
+    camel-case: ^4.1.2
+    cross-spawn: ^7.0.3
+    deepmerge: ^4.2.2
+    highlight.js: ^11.6.0
+    htmlparser2: ^10.0.0
+    prismjs: ^1.29.0
+    strip-indent: ^3.0.0
+  checksum: 921ad013b042a231fb8d02fd158f09104ca32d6f58ae17c9a2f18b9626ee77c0a528826eddadfc88d37cb4705e535a68722a10e468bd4c83fed294a85fd759dc
+  languageName: node
+  linkType: hard
+
+"hexo@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "hexo@npm:8.1.0"
   dependencies:
     abbrev: ^3.0.0
-    archy: ^1.0.0
     bluebird: ^3.7.2
+    fast-archy: ^1.0.0
     fast-text-table: ^1.0.1
     hexo-cli: ^4.3.2
     hexo-front-matter: ^4.2.1
     hexo-fs: ^5.0.0
     hexo-i18n: ^2.0.0
     hexo-log: ^4.1.0
-    hexo-util: ^3.3.0
+    hexo-util: ^4.0.0
     js-yaml: ^4.1.0
     js-yaml-js-types: ^1.0.1
     micromatch: ^4.0.8
@@ -3528,7 +3561,7 @@ __metadata:
     warehouse: ^6.0.0
   bin:
     hexo: bin/hexo
-  checksum: 5bf7de3515595341f8610a5487021d6378314bd9113bb82991c5d05d6e52f2fece7295f28baaac5f45d1317fa49148b8c7c1d59d5649c125060a000c1dcbcad4
+  checksum: 015444a943afb8f5134d6da4d0519047139db1f33b4838d111c7f3b5030db4d2db27561f13568177079b2c397d4f209f6ca7547f4c415403ce8d5b966ea9387e
   languageName: node
   linkType: hard
 
@@ -3552,6 +3585,18 @@ __metadata:
   dependencies:
     whatwg-encoding: ^3.1.1
   checksum: 3339b71dab2723f3159a56acf541ae90a408ce2d11169f00fe7e0c4663d31d6398c8a4408b504b4eec157444e47b084df09b3cb039c816660f0dd04846b8957d
+  languageName: node
+  linkType: hard
+
+"htmlparser2@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "htmlparser2@npm:10.0.0"
+  dependencies:
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.3
+    domutils: ^3.2.1
+    entities: ^6.0.0
+  checksum: ba81aca5d344437e791ffddf61d498972fc0e7dd2d41f59f920e93aedb64667a0f38fed88e0d81fe23ea5a10825991caa020212fdd72a0dc287ab2aaad95fbf5
   languageName: node
   linkType: hard
 
