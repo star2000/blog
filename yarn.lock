@@ -3433,7 +3433,7 @@ __metadata:
   resolution: "hexo-site@workspace:."
   dependencies:
     "@next-theme/plugins": ^8.25.0
-    hexo: ^8.1.0
+    hexo: ^8.1.1
     hexo-generator-archive: ^2.0.0
     hexo-generator-feed: ^3.0.0
     hexo-generator-index: ^4.0.0
@@ -3532,9 +3532,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "hexo@npm:8.1.0"
+"hexo@npm:^8.1.1":
+  version: 8.1.1
+  resolution: "hexo@npm:8.1.1"
   dependencies:
     abbrev: ^3.0.0
     bluebird: ^3.7.2
@@ -3561,7 +3561,7 @@ __metadata:
     warehouse: ^6.0.0
   bin:
     hexo: bin/hexo
-  checksum: 015444a943afb8f5134d6da4d0519047139db1f33b4838d111c7f3b5030db4d2db27561f13568177079b2c397d4f209f6ca7547f4c415403ce8d5b966ea9387e
+  checksum: e33ed7a9b7dd822886b20098554ab83eedf4f934220fe1d4d2a426393220feea4faea04d8e52b0df29393326f0f2b4b054f5a26adbdcfb5e780d6d106fe41da0
   languageName: node
   linkType: hard
 
