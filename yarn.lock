@@ -869,9 +869,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next-theme/plugins@npm:^8.26.0":
-  version: 8.26.0
-  resolution: "@next-theme/plugins@npm:8.26.0"
+"@next-theme/plugins@npm:^8.27.0":
+  version: 8.27.0
+  resolution: "@next-theme/plugins@npm:8.27.0"
   dependencies:
     "@creativecommons/vocabulary": 2020.11.3
     "@fancyapps/ui": 5.0.31
@@ -897,7 +897,7 @@ __metadata:
     quicklink: 3.0.1
     ribbon.js: 1.0.2
     wavedrom: 3.5.0
-  checksum: b28768d4840265cfaedea6e55c79f82832cc5f62d0e0db3deb4ee0fa7a7bcad51afe41fa84585dba108a701df0fb0c5a735e0b95970687099f403be7972bc678
+  checksum: 24bf25866adf67090c37bd6675dc712cbc608751708ad8acc5c98dad23bf108e0c58fe5f9708c309d3d5322deca9bb008592b6b9cb53891b21d1ac0146d42435
   languageName: node
   linkType: hard
 
@@ -3432,7 +3432,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hexo-site@workspace:."
   dependencies:
-    "@next-theme/plugins": ^8.26.0
+    "@next-theme/plugins": ^8.27.0
     hexo: ^8.1.1
     hexo-generator-archive: ^2.0.0
     hexo-generator-feed: ^3.0.0
