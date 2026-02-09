@@ -2637,6 +2637,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"entities@npm:^7.0.0":
+  version: 7.0.1
+  resolution: "entities@npm:7.0.1"
+  checksum: 5ee49e52e64eafc63251585f74eae50f259ea2169dbbf5380843dcd97c79bfe430a58e7f34012ab67a8e258f6ef9f92d721d149ffc88c89039e155f1bcf48a53
+  languageName: node
+  linkType: hard
+
 "env-paths@npm:^2.2.0":
   version: 2.2.1
   resolution: "env-paths@npm:2.2.1"
@@ -2807,12 +2814,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-xml-parser@npm:^5.3.3":
+  version: 5.3.5
+  resolution: "fast-xml-parser@npm:5.3.5"
+  dependencies:
+    strnum: ^2.1.2
+  bin:
+    fxparser: src/cli/cli.js
+  checksum: 0aa34c9fd517177eec6147ba4a267d3385bd743859a00eaf8b46ef6e57bb027a3546c4cfa3a7aa13e0ae2c14e264fdf9d7cc937f59b025e662589ba6b2ba0213
+  languageName: node
+  linkType: hard
+
 "faye-websocket@npm:0.11.4":
   version: 0.11.4
   resolution: "faye-websocket@npm:0.11.4"
   dependencies:
     websocket-driver: ">=0.5.1"
   checksum: d49a62caf027f871149fc2b3f3c7104dc6d62744277eb6f9f36e2d5714e847d846b9f7f0d0b7169b25a012e24a594cde11a93034b30732e4c683f20b8a5019fa
+  languageName: node
+  linkType: hard
+
+"feedsmith@npm:2.9.0":
+  version: 2.9.0
+  resolution: "feedsmith@npm:2.9.0"
+  dependencies:
+    entities: ^7.0.0
+    fast-xml-parser: ^5.3.3
+  checksum: d3ee1e96a06e542647fffc9a472bf18f66be7ba5a1ba21ba65e226bfc05ef59574b853d199f25173104055cbdaee327506c4043e47846c3e4d59192928092019
   languageName: node
   linkType: hard
 
@@ -3299,13 +3327,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-generator-feed@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "hexo-generator-feed@npm:3.0.0"
+"hexo-generator-feed@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-generator-feed@npm:4.0.0"
   dependencies:
-    hexo-util: ^2.1.0
-    nunjucks: ^3.0.0
-  checksum: abaa430b1b82ccb646aac731bcd6db9785b3cc4749e3ff0108ae3b0adae9a9837075511b0acecb936408656fab5915fc7bbc5bdc3fb5ab7739105c1115214f04
+    feedsmith: 2.9.0
+    hexo-util: 4.0.0
+  checksum: 4d78e23f2314e3d59d55caf0bf23a1b4dd87faaedd24664ba422e1ac6a88abf8031c937eade5ef95160a7727155c9a1a37f1d983a034e82daca9c2fe10acb802
   languageName: node
   linkType: hard
 
@@ -3435,7 +3463,7 @@ __metadata:
     "@next-theme/plugins": ^8.27.0
     hexo: ^8.1.1
     hexo-generator-archive: ^2.0.0
-    hexo-generator-feed: ^3.0.0
+    hexo-generator-feed: ^4.0.0
     hexo-generator-index: ^4.0.0
     hexo-generator-searchdb: ^1.5.0
     hexo-generator-sitemap: ^3.0.1
@@ -3468,6 +3496,21 @@ __metadata:
     prismjs: ^1.17.1
     strip-indent: ^3.0.0
   checksum: 524319ed06d95a34b0ccfe6ab147c16724c9dff259afe8a24524c657e8df3de2e9413b1edcd6e717bfdbc00149ea8944fa7f1e4b1a2b0dda042a91e32ac406fe
+  languageName: node
+  linkType: hard
+
+"hexo-util@npm:4.0.0, hexo-util@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-util@npm:4.0.0"
+  dependencies:
+    camel-case: ^4.1.2
+    cross-spawn: ^7.0.3
+    deepmerge: ^4.2.2
+    highlight.js: ^11.6.0
+    htmlparser2: ^10.0.0
+    prismjs: ^1.29.0
+    strip-indent: ^3.0.0
+  checksum: 921ad013b042a231fb8d02fd158f09104ca32d6f58ae17c9a2f18b9626ee77c0a528826eddadfc88d37cb4705e535a68722a10e468bd4c83fed294a85fd759dc
   languageName: node
   linkType: hard
 
@@ -3514,21 +3557,6 @@ __metadata:
     prismjs: ^1.29.0
     strip-indent: ^3.0.0
   checksum: b08505c322d52cb9b227f12711d2b6ff55d4dfa25492852bca392603c5af2b14977c17629a8ed089864ecfd3c45e909ff9e236e319209e7dfd09edba184385ca
-  languageName: node
-  linkType: hard
-
-"hexo-util@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "hexo-util@npm:4.0.0"
-  dependencies:
-    camel-case: ^4.1.2
-    cross-spawn: ^7.0.3
-    deepmerge: ^4.2.2
-    highlight.js: ^11.6.0
-    htmlparser2: ^10.0.0
-    prismjs: ^1.29.0
-    strip-indent: ^3.0.0
-  checksum: 921ad013b042a231fb8d02fd158f09104ca32d6f58ae17c9a2f18b9626ee77c0a528826eddadfc88d37cb4705e535a68722a10e468bd4c83fed294a85fd759dc
   languageName: node
   linkType: hard
 
@@ -4725,7 +4753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nunjucks@npm:^3.0.0, nunjucks@npm:^3.1.6, nunjucks@npm:^3.2.2, nunjucks@npm:^3.2.4":
+"nunjucks@npm:^3.1.6, nunjucks@npm:^3.2.2, nunjucks@npm:^3.2.4":
   version: 3.2.4
   resolution: "nunjucks@npm:3.2.4"
   dependencies:
@@ -5677,6 +5705,13 @@ __metadata:
   dependencies:
     min-indent: ^1.0.0
   checksum: 18f045d57d9d0d90cd16f72b2313d6364fd2cb4bf85b9f593523ad431c8720011a4d5f08b6591c9d580f446e78855c5334a30fb91aa1560f5d9f95ed1b4a0530
+  languageName: node
+  linkType: hard
+
+"strnum@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "strnum@npm:2.1.2"
+  checksum: 755e8327ee68201d700169ceee097ea52da7b675f4521442a8dbd1517021f89a91399213c446d1bf3d1123ca1896a76f0ff076d04c88ffe6056e78828ce6f60a
   languageName: node
   linkType: hard
 
