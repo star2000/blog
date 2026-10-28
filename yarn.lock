@@ -2802,14 +2802,14 @@ __metadata:
     hexo-renderer-marked: ^7.0.1
     hexo-renderer-stylus: ^3.0.1
     hexo-server: ^3.0.0
-    hexo-theme-next: ^8.29.0
+    hexo-theme-next: ^8.29.1
   languageName: unknown
   linkType: soft
 
-"hexo-theme-next@npm:^8.29.0":
-  version: 8.29.0
-  resolution: "hexo-theme-next@npm:8.29.0"
-  checksum: ea9fd6cc0448de85ce7063de066c6691462cde61a6fc22a4a8c80bf12db82d7de23765b85305917c033984f09beed6b6755488959a73c04d1962797be8d9f07b
+"hexo-theme-next@npm:^8.29.1":
+  version: 8.29.1
+  resolution: "hexo-theme-next@npm:8.29.1"
+  checksum: c8b2ccd57df9c7f658456738bc8ee7ba364a464aff5779272d783db27f3b53bd383e8ee6fa336366be954959751191a56542abf6a0c169aa101a01431da00bd7
   languageName: node
   linkType: hard
 
